@@ -1,10 +1,15 @@
 import React from 'react'
 
+import {motion} from 'framer-motion';
+
 const ProjectList = () => {
+
     return (
-        <div>
+        <motion.div
+
+        >
             Listy
-        </div>
+        </motion.div>
     )
 }
 

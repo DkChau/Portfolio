@@ -18,7 +18,8 @@ const SingleRectangle = (props) => {
         exit:{
             x:0,
             transition:{
-                type:'tween'
+                type:'tween',
+                duration:0.3
             }
         }
     };

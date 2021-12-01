@@ -12,10 +12,10 @@ function App() {
   return (
     <>
       <NavBar/>
-      <AnimatePresence exitBeforeEnter >
+      <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           <Route exact path='/' element={<Home/>}/>
-          <Route exact path='/projects' element={<LoadingScreen/>}/>
+          <Route exact path='/projects' element={<Home/>}/>
         </Routes>
       </AnimatePresence>
     </>
