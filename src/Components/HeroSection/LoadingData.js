@@ -1,22 +1,20 @@
-export const rectangles = [
-    {x:'-30%'},
-    {x:'30%'},
-    {x:'-40%'},
-    {x:'40%'}, 
-    {x:'-50%'},
-    {x:'50%'},
-    {x:'-60%'},
-    {x:'60%'},
-    {x:'-70%'},
-    {x:'70%'}, 
-    {x:'-80%'},
-    {x:'80%'},
-    {x:'-30%'},
-    {x:'30%'},
-    {x:'-40%'},
-    {x:'40%'}, 
-    {x:'-50%'},
-    {x:'50%'},
-    {x:'-60%'},
-    {x:'60%'},
-]
+export const rectangles = (()=>{
+    let testArray=[];
+    let startWidth=30;
+    let changeWidth=3;
+    let numRect = 20;
+
+    for(let i=0; i<numRect; i++){
+        if(i%2===0){
+            testArray.push({
+                width:`-${startWidth + i*changeWidth}%`
+            })
+        }
+        else{
+            testArray.push({
+                width:`${startWidth + i*changeWidth}%`
+            })  
+        }
+    }
+    return testArray;
+})();

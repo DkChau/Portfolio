@@ -10,7 +10,7 @@ const SingleRectangle = (props) => {
     const listItem = {
         hidden: { x:0 },
         show: { 
-            x:`${props.data}`,
+            x:`${props.data.width}`,
             transition:{
                 type:'tween'
             }
@@ -26,9 +26,14 @@ const SingleRectangle = (props) => {
 
     return (
         <RectContainer
+            viewBox='0 0 100% 100%'
             variants={listItem}
+
         >
-            <RectWrapper>
+            <RectWrapper
+                width='100%'
+                height='100%'
+            >
             </RectWrapper>
         </RectContainer>
     )

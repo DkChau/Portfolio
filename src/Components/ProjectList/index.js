@@ -1,15 +1,22 @@
 import React from 'react'
-
-import {motion} from 'framer-motion';
+import IndividualProject from '../IndividualProject'
+import {
+    ProjectContainer,
+} from './ProjectListElements'
+import { ProjectData } from './Data'
 
 const ProjectList = () => {
 
-    return (
-        <motion.div
+    console.log(ProjectData)
 
-        >
-            Listy
-        </motion.div>
+    return (
+        <ProjectContainer>
+            {ProjectData.map((project,index)=>{
+                return (
+                    <IndividualProject data={project} />
+                )
+            })}
+        </ProjectContainer>
     )
 }
 

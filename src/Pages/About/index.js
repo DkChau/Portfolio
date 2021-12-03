@@ -1,10 +1,11 @@
 import React from 'react'
-import HeroSection from '../../Components/HeroSection'
+import AboutHeroSection from '../../Components/AboutHeroSection'
 import NavBar from '../../Components/NavBar'
-import ProjectList from '../../Components/ProjectList'
-import { HomeContainer } from './HomeElements'
+import {
+    AboutContainer
+} from './AboutElements'
 
-const Home = () => {
+const About = () => {
 
     const transitionVariant = {
         hidden:{x:'-100vw'},
@@ -28,17 +29,16 @@ const Home = () => {
     }
 
     return (
-        <HomeContainer
+        <AboutContainer
             variants={transitionVariant}
             initial='hidden'
             animate='show'
             exit='exit'
         >
             <NavBar/>
-            <HeroSection/>
-            <ProjectList/>
-        </HomeContainer>
+            <AboutHeroSection/>
+        </AboutContainer>
     )
 }
 
-export default Home
+export default About

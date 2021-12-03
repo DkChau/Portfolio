@@ -30,7 +30,7 @@ const LoadingScreen = (props) => {
         >
             {props.rectangles.map((rectangle,index)=>{
                 return (
-                    <SingleRectangle data={rectangle.x}/>
+                    <SingleRectangle data={rectangle}/>
                 )
             })}
         </LoadingContainer>

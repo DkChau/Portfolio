@@ -8,9 +8,25 @@ import {
     NavWrapper,
     LinkWrapper
 } from './NavBarElements'
+import Logo from '../../Images/Logo.svg'
 
 const NavBar = () => {
-
+    
+    const navVariant = {
+        hidden:{y:'-100vh'},
+        show:{
+            y:0, transition:{
+                delay:1.5,
+                type:'tween'
+            }
+        },
+        exit:{
+            y:'-100vh', transition:{
+                duration:0.4,
+                type:'tween'
+            }
+        },
+    }
     const routes = [
         {to:'/about', text:'About'},
         {to:'/projects', text:'Projects'},
@@ -18,10 +34,15 @@ const NavBar = () => {
     ]
     
     return (
-        <NavContainer>
+        <NavContainer
+            variants={navVariant}
+            initial='hidden'
+            animate='show'
+            exit='exit'
+        >
             <NavWrapper>
-                <NavLogoWrapper>
-                    <NavLogo to='/'>DKC</NavLogo>
+                <NavLogoWrapper to='/'>
+                    <NavLogo src={Logo}></NavLogo>
                 </NavLogoWrapper>
                 <NavLinkWrapper>
                     {routes.map((route,index)=>{

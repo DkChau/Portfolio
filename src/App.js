@@ -1,9 +1,8 @@
 import './App.css';
 import {Routes, Route, useLocation} from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
-import NavBar from './Components/NavBar'
 import Home from './Pages/Home';
-import LoadingScreen from './Components/LoadingScreen';
+import About from './Pages/About';
 
 function App() {
 
@@ -11,10 +10,10 @@ function App() {
 
   return (
     <>
-      <NavBar/>
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
           <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/about' element={<About/>}/>
           <Route exact path='/projects' element={<Home/>}/>
         </Routes>
       </AnimatePresence>
