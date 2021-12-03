@@ -9,8 +9,11 @@ import {
     Text,
     Title,
     LinkWrapper,
-    ProjectLink
+    ProjectLink,
+    Arrow,
+    ArrowWrapper
 } from './IndividualElements'
+import {BsArrowRight} from 'react-icons/bs';
 
 const IndividualProject = (props) => {
     console.log(props.data)
@@ -22,10 +25,18 @@ const IndividualProject = (props) => {
                 </ImageWrapper>
                 <ContentWrapper>
                     <ContentText>
-                        <Title>Test</Title>
-                        <Text>test</Text>
-                        <LinkWrapper>
-                            <ProjectLink to='#'>Test</ProjectLink>
+                        <Title>{props.data.title}</Title>
+                        <Text>{props.data.text}</Text>
+                        {/* <LinkWrapper>
+                            <ProjectLink to={props.data.linkTo}>Test</ProjectLink>
+                        </LinkWrapper> */}
+                        <LinkWrapper  to={props.data.linkTo}>
+                            <ArrowWrapper>
+                                <ProjectLink>View Project</ProjectLink>
+                                <Arrow>
+                                    <BsArrowRight/>
+                                </Arrow>
+                            </ArrowWrapper>
                         </LinkWrapper>
                     </ContentText>
                 </ContentWrapper>
