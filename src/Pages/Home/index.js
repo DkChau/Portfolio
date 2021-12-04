@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroSection from '../../Components/HeroSection'
-import NavBar from '../../Components/NavBar'
 import ProjectList from '../../Components/ProjectList'
 import { HomeContainer } from './HomeElements'
 
@@ -34,7 +33,6 @@ const Home = () => {
             animate='show'
             exit='exit'
         >
-            <NavBar/>
             <HeroSection/>
             <ProjectList/>
         </HomeContainer>

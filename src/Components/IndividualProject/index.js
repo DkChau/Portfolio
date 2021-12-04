@@ -11,7 +11,8 @@ import {
     LinkWrapper,
     ProjectLink,
     Arrow,
-    ArrowWrapper
+    ArrowWrapper,
+    SubHead
 } from './IndividualElements'
 import {BsArrowRight} from 'react-icons/bs';
 
@@ -19,17 +20,15 @@ const IndividualProject = (props) => {
     console.log(props.data)
     return (
         <IndividualContainer>
-            <IndividualWrapper>
+            <IndividualWrapper imgFirst={props.data.imgFirst}>
                 <ImageWrapper>
                     <ProjectImage src={props.data.image}></ProjectImage>
                 </ImageWrapper>
-                <ContentWrapper>
+                <ContentWrapper imgFirst={props.data.imgFirst}>
                     <ContentText>
                         <Title>{props.data.title}</Title>
+                        <SubHead>{props.data.subHead}</SubHead>
                         <Text>{props.data.text}</Text>
-                        {/* <LinkWrapper>
-                            <ProjectLink to={props.data.linkTo}>Test</ProjectLink>
-                        </LinkWrapper> */}
                         <LinkWrapper  to={props.data.linkTo}>
                             <ArrowWrapper>
                                 <ProjectLink>View Project</ProjectLink>

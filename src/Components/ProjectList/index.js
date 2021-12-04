@@ -4,13 +4,13 @@ import {
     ProjectContainer,
 } from './ProjectListElements'
 import { ProjectData } from './Data'
+import BlackScreen from '../BlackScreen'
 
 const ProjectList = () => {
 
-    console.log(ProjectData)
-
     return (
         <ProjectContainer>
+            <BlackScreen/>
             {ProjectData.map((project,index)=>{
                 return (
                     <IndividualProject data={project} />

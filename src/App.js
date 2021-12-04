@@ -3,6 +3,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 import {AnimatePresence} from 'framer-motion';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import NavBar from './Components/NavBar';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <AnimatePresence exitBeforeEnter>
+        <NavBar/>
         <Routes location={location} key={location.key}>
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/about' element={<About/>}/>

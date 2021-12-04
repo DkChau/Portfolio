@@ -11,7 +11,4 @@ export const RectWrapper = styled(motion.rect)`
     width:100%;
     height:100%;
     shape-rendering: crispEdges;
-    stroke: #646464;
-    stroke-width: 1px;
-    stroke-linejoin: round;
 `
