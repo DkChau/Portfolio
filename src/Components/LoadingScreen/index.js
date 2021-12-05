@@ -14,11 +14,6 @@ const LoadingScreen = (props) => {
             staggerChildren: 0.05
           }
         },
-        // exit:{
-        //     transition:{
-        //         staggerChildren:0.1
-        //     }
-        // }
     }
     
 

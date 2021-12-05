@@ -11,7 +11,7 @@ const Home = () => {
             x:'0',
             transition:{
                 duration:0.5,
-                delayChildren:0.5
+                when:'beforeChildren',
             }
         },
         exit:{

@@ -13,7 +13,7 @@ const ProjectList = () => {
             <BlackScreen/>
             {ProjectData.map((project,index)=>{
                 return (
-                    <IndividualProject data={project} />
+                    <IndividualProject key={`project${index}`} data={project} />
                 )
             })}
         </ProjectContainer>

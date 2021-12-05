@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 
-export const IndividualContainer = styled.div`
+export const IndividualContainer = styled(motion.div)`
     width:100%;
     max-width:1400px;
     margin:0 auto;
@@ -15,7 +16,7 @@ export const IndividualWrapper = styled.div`
     grid-template-rows: 1fr;
     grid-template-areas: ${(props)=> props.imgFirst ? `'image text'` : `'text image'`};
 `
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(motion.div)`
     display:flex;
     width:500px;
     height:100%;
@@ -27,7 +28,7 @@ export const ProjectImage = styled.img`
     height:400px;
 
 `
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled(motion.div)`
     width:100%;
     height:100%;
     display:flex;
@@ -52,10 +53,12 @@ export const SubHead = styled.h4`
     font-weight:600;
     color:#ff0000;
 `
-export const Text = styled.p`
+export const Text = styled(motion.p)`
     font-size:1.2rem;
     font-family:'lora';
+    height:100%;
     padding:20px 0;
+    overflow:hidden;
 `
 export const ProjectLink=styled.span`
     font-size: 1rem;
@@ -96,4 +99,9 @@ export const LinkWrapper = styled(Link)`
             transform:translateY(-32px);
         }
     }
+`
+export const AnimationWrapper = styled.div`
+    height:auto;
+    width:auto;
+    overflow-y:hidden;
 `
