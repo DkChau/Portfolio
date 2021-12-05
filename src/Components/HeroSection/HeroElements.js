@@ -14,13 +14,13 @@ export const HeroWrapper = styled(motion.div)`
     height:100%;
 `
 export const HeroText = styled(motion.h1)`
-    font-size:6rem;
+    font-size:4rem;
     color:#000000;
-    font-weight:500;
+    font-weight:700;
 `
 export const HeroSubText = styled(motion.h2)`
     font-size:2.3rem;
     font-weight:300;
     color:#000000;
-    font-family:'raleway'
+    font-family:'lora'
 `

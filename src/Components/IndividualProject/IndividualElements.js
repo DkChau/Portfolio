@@ -20,7 +20,7 @@ export const ImageWrapper = styled.div`
     width:500px;
     height:100%;
     overflow:hidden;
-    border:1px solid black;
+    align-items: center;
     grid-area:image;
 `
 export const ProjectImage = styled.img`
@@ -45,18 +45,19 @@ export const ContentText = styled.div`
     grid-area:text;
 `
 export const Title = styled.h2`
-    font-size:3rem;
+    font-size:2.4rem;
+    font-weight:700;
 `
 export const SubHead = styled.h4`
-
+    font-weight:600;
+    color:#ff0000;
 `
 export const Text = styled.p`
-    font-size:1.3rem;
-    font-family:'raleway';
+    font-size:1.2rem;
+    font-family:'lora';
     padding:20px 0;
 `
 export const ProjectLink=styled.span`
-    font-weight:400;
     font-size: 1rem;
     display:block;
     align-self:center;
@@ -88,6 +89,8 @@ export const LinkWrapper = styled(Link)`
     text-decoration:none;
     color: #000000;
     overflow-y: hidden;
+    font-family:'lora';
+
     &:hover{
         ${ArrowWrapper}{
             transform:translateY(-32px);

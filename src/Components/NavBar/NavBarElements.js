@@ -49,5 +49,4 @@ export const NavLink = styled(Link)`
     color:black;
     font-size:1.5rem;
     font-weight:300;
-    font-family:'raleway'
 `
