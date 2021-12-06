@@ -11,18 +11,18 @@ const Home = () => {
             x:'0',
             transition:{
                 duration:0.5,
+                ease:'easeInOut',
                 when:'beforeChildren',
             }
         },
         exit:{
             x:'100vw',
             transition:{
-                delay:0.3,
                 type:'tween',
-                duration:1,
-                ease:'easeInOut'
+                duration:0.5,
+                ease:'easeInOut',
+                when:'afterChildren'
             }
-        
         }
     }
 

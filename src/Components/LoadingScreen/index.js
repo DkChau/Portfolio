@@ -7,9 +7,7 @@ import {
 const LoadingScreen = (props) => {
 
     const container = {
-        hidden: { opacity: 1 },
         show: {
-          opacity: 1,
           transition: {
             staggerChildren: 0.05
           }

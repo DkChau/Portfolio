@@ -1,20 +1,18 @@
 export const rectangles = (()=>{
     let testArray=[];
-    let startWidth=30;
-    let changeWidth=3;
+    let startWidth=40;
+    let changeWidth=2;
     let numRect = 20;
 
-    for(let i=0; i<numRect; i++){
-        if(i%2===0){
-            testArray.push({
+    for(let i=0; i<numRect; i=i+2){
+        testArray.push(
+            {
                 width:`-${startWidth + i*changeWidth}%`
-            })
-        }
-        else{
-            testArray.push({
+            },
+            {
                 width:`${startWidth + i*changeWidth}%`
-            })  
-        }
+            },
+        )
     }
     return testArray;
 })();
