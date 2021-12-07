@@ -11,15 +11,18 @@ const SingleRectangle = (props) => {
         hidden: { x:0 },
         show: { 
             x:`${props.data.width}`,
+            
             transition:{
-                type:'tween'
+                type:'tween',
+                ease:'easeInOut'
             }
         },
         exit:{
             x:0,
             transition:{
                 type:'tween',
-                duration:0.3
+                ease:'easeInOut',
+                duration:0.5
             }
         }
     };

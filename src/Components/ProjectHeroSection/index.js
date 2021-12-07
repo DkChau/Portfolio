@@ -1,15 +1,15 @@
 import React from 'react'
 import LoadingScreen from '../LoadingScreen'
 import {
-    AboutContainer,
-    AboutSubText,
-    AboutText,
-    AboutWrapper,
+    ProjectContainer,
+    ProjectSubText,
+    ProjectText,
+    ProjectWrapper,
     AnimationWrapper
-} from './AboutHeroSectionElements'
+} from './ProjectHeroElements'
 import { rectangles } from './LoadingData'
 
-const AboutHeroSection = () => {
+const ProjectHeroSection = () => {
 
     const subtextVariant = {
       hidden:{
@@ -58,20 +58,20 @@ const AboutHeroSection = () => {
     return (
       <React.Fragment>
           <LoadingScreen rectangles={rectangles}/>
-          <AboutContainer>
-              <AboutWrapper>
+          <ProjectContainer>
+              <ProjectWrapper>
                 <AnimationWrapper
                   variants={wrapperVariant}
                 >
-                  <AboutText
+                  <ProjectText
                     variants={textVariant}
-                  >About Me</AboutText>
+                  >Projects</ProjectText>
                 </AnimationWrapper>
-                <AboutSubText variants={subtextVariant}>a story of my life</AboutSubText>
-              </AboutWrapper>
-          </AboutContainer>
+                <ProjectSubText variants={subtextVariant}>A collection of my best works</ProjectSubText>
+              </ProjectWrapper>
+          </ProjectContainer>
       </React.Fragment>
     )
 }
 
-export default AboutHeroSection
+export default ProjectHeroSection

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 
-export const AboutContainer = styled(motion.div)`
+export const ProjectContainer = styled(motion.div)`
     background:#ffffff;
     height:100vh;
     position:relative;
     background:transparent;
 `
-export const AboutWrapper = styled(motion.div)`
+export const ProjectWrapper = styled(motion.div)`
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -18,12 +18,12 @@ export const AboutWrapper = styled(motion.div)`
     top:0;
     left:0;
 `
-export const AboutText = styled(motion.h1)`
+export const ProjectText = styled(motion.h1)`
     font-size:3.4rem;
     color:white;
     font-weight:700;
 `
-export const AboutSubText = styled(motion.h2)`
+export const ProjectSubText = styled(motion.h2)`
     font-size:2.3rem;
     font-weight:300;
     color:#000000;

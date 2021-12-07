@@ -14,8 +14,6 @@ const LoadingScreen = (props) => {
         },
     }
     
-
-
     return (
 
         <LoadingContainer

@@ -11,7 +11,8 @@ const BlackScreen = () => {
             width:'100%',
             transition:{
                 duration:0.5,
-                type:'tween'
+                type:'tween',
+                ease:'easeInOut'
             }
         }
     }

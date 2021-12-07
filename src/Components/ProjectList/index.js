@@ -3,15 +3,14 @@ import IndividualProject from '../IndividualProject'
 import {
     ProjectContainer,
 } from './ProjectListElements'
-import { ProjectData } from './Data'
 import BlackScreen from '../BlackScreen'
 
-const ProjectList = () => {
+const ProjectList = (props) => {
 
     return (
         <ProjectContainer>
             <BlackScreen/>
-            {ProjectData.map((project,index)=>{
+            {props.data.map((project,index)=>{
                 return (
                     <IndividualProject key={`project${index}`} data={project} />
                 )

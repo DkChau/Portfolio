@@ -24,7 +24,7 @@ import { useEffect } from 'react';
 
 const IndividualProject = (props) => {
 
-    const {ref, inView, entry} = useInView({
+    const {ref, inView} = useInView({
         threshold:.8,
         triggerOnce:true
     });
@@ -38,8 +38,9 @@ const IndividualProject = (props) => {
             clipPath: 'inset(0 0% 0 0)',
             transition:{
                 type:'tween',
-                delay:0.5,
-                duration:0.3,
+                delay:0.3,
+                duration:0.5,
+                ease:'easeInOut'
             }
         },
         exit:{
@@ -55,7 +56,9 @@ const IndividualProject = (props) => {
             y:0,
             transition:{
                 delay:0.3,
+                duration:0.5,
                 type:'tween',
+                ease:'easeInOut'
             }
         }
     }
@@ -67,20 +70,8 @@ const IndividualProject = (props) => {
             backgroundColor:['black', 'black'],
             clipPath: ['inset(0 0% 0 0)', 'inset(0 0 0 100%)'],
             transition:{
-                duration:0.5,
-            }
-        }
-    }
-    const headingVariants = {
-        hidden:{
-            y:'100%'
-        },
-        show:{
-            y:0,
-            transition:{
-                type:'tween',
-                delay:0.5,
-                duration:0.3
+                duration:0.3,
+                ease:'easeInOut'
             }
         }
     }
@@ -95,8 +86,7 @@ const IndividualProject = (props) => {
     },[animation, inView])
 
     return (
-        <IndividualContainer ref={ref}
-        >
+        <IndividualContainer ref={ref}>
             <IndividualWrapper imgFirst={props.data.imgFirst}>
                 <ImageWrapper
                     animate={animation}
@@ -117,7 +107,7 @@ const IndividualProject = (props) => {
                             <Title
                                 initial='hidden'
                                 animate={animation}
-                                variants={headingVariants}
+                                variants={textVariants}
                             >
                                 {props.data.title}
                             </Title>

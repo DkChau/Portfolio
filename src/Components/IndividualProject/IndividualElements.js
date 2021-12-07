@@ -47,13 +47,14 @@ export const ContentText = styled.div`
 `
 export const Title = styled(motion.div)`
     font-size:2.4rem;
-    font-weight:700;
-    color:red;
+    font-weight:800;
+    padding:5px 0;
+    color:black;
     overflow-y:hidden;
 `
 export const SubHead = styled(motion.p)`
-    font-weight:600;
-    color:#ff0000;
+    font-weight:500;
+    color:black;
     overflow:hidden;
 `
 export const Text = styled(motion.p)`
@@ -95,7 +96,6 @@ export const LinkWrapper = styled(Link)`
     text-decoration:none;
     color: #000000;
     overflow-y: hidden;
-    font-family:'lora';
 
     &:hover{
         ${ArrowWrapper}{
