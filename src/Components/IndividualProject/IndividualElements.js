@@ -45,13 +45,16 @@ export const ContentText = styled.div`
     grid-template-rows: auto 1fr auto;
     grid-area:text;
 `
-export const Title = styled.h2`
+export const Title = styled(motion.div)`
     font-size:2.4rem;
     font-weight:700;
+    color:red;
+    overflow-y:hidden;
 `
-export const SubHead = styled.h4`
+export const SubHead = styled(motion.p)`
     font-weight:600;
     color:#ff0000;
+    overflow:hidden;
 `
 export const Text = styled(motion.p)`
     font-size:1.2rem;
@@ -104,4 +107,24 @@ export const AnimationWrapper = styled.div`
     height:auto;
     width:auto;
     overflow-y:hidden;
+    position:relative;
+    justify-self:start;
+`
+export const HeadingWrapper = styled(motion.div)`
+    height:100%;
+    width:100%;
+    overflow-y:hidden;
+    display:flex;
+    background:black;
+    position:absolute;
+    left:0;
+    top:0;
+`
+export const ButtonWrapper = styled(motion.div)`
+    height:100%;
+    width:100%;
+    overflow-y:hidden;
+    top:0;
+    left:0;
+    justify-self:start;
 `

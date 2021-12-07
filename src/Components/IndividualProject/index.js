@@ -13,7 +13,9 @@ import {
     Arrow,
     ArrowWrapper,
     SubHead,
-    AnimationWrapper
+    AnimationWrapper,
+    HeadingWrapper,
+    ButtonWrapper
 } from './IndividualElements'
 import {BsArrowRight} from 'react-icons/bs';
 import {useAnimation} from 'framer-motion';
@@ -23,7 +25,8 @@ import { useEffect } from 'react';
 const IndividualProject = (props) => {
 
     const {ref, inView, entry} = useInView({
-        threshold:.8
+        threshold:.8,
+        triggerOnce:true
     });
     const animation = useAnimation();
 
@@ -35,7 +38,8 @@ const IndividualProject = (props) => {
             clipPath: 'inset(0 0% 0 0)',
             transition:{
                 type:'tween',
-                duration:0.5,
+                delay:0.5,
+                duration:0.3,
             }
         },
         exit:{
@@ -50,7 +54,33 @@ const IndividualProject = (props) => {
         show:{
             y:0,
             transition:{
+                delay:0.3,
                 type:'tween',
+            }
+        }
+    }
+    const wrapperVariants ={
+        hidden:{
+
+        },
+        show:{
+            backgroundColor:['black', 'black'],
+            clipPath: ['inset(0 0% 0 0)', 'inset(0 0 0 100%)'],
+            transition:{
+                duration:0.5,
+            }
+        }
+    }
+    const headingVariants = {
+        hidden:{
+            y:'100%'
+        },
+        show:{
+            y:0,
+            transition:{
+                type:'tween',
+                delay:0.5,
+                duration:0.3
             }
         }
     }
@@ -77,24 +107,54 @@ const IndividualProject = (props) => {
                 </ImageWrapper>
                 <ContentWrapper imgFirst={props.data.imgFirst}>
                     <ContentText>
-                        <Title>{props.data.title}</Title>
-                        <SubHead>{props.data.subHead}</SubHead>
+                        <AnimationWrapper>
+                            <HeadingWrapper
+                                animate={animation}
+                                initial='hidden'
+                                variants={wrapperVariants}
+                            >
+                            </HeadingWrapper>
+                            <Title
+                                initial='hidden'
+                                animate={animation}
+                                variants={headingVariants}
+                            >
+                                {props.data.title}
+                            </Title>
+                        </AnimationWrapper>
+                        <AnimationWrapper>
+                            <SubHead
+                                animate={animation}
+                                initial='hidden'
+                                variants={textVariants}
+
+                            >{props.data.subHead}
+                            </SubHead>
+                        </AnimationWrapper>
                         <AnimationWrapper>
                             <Text
                                 animate={animation}
                                 initial='hidden'
                                 variants={textVariants}
-                            >{props.data.text}
+                                >{props.data.text}
                             </Text>
                         </AnimationWrapper>
-                        <LinkWrapper  to={props.data.linkTo}>
-                            <ArrowWrapper>
-                                <ProjectLink>View Project</ProjectLink>
-                                <Arrow>
-                                    <BsArrowRight/>
-                                </Arrow>
-                            </ArrowWrapper>
-                        </LinkWrapper>
+                        <AnimationWrapper>
+                            <ButtonWrapper
+                                animate={animation}
+                                initial='hidden'
+                                variants={textVariants}
+                            >
+                                <LinkWrapper  to={props.data.linkTo}>
+                                    <ArrowWrapper>
+                                        <ProjectLink>View Project</ProjectLink>
+                                        <Arrow>
+                                            <BsArrowRight/>
+                                        </Arrow>
+                                    </ArrowWrapper>
+                                </LinkWrapper>
+                            </ButtonWrapper>
+                        </AnimationWrapper>
                     </ContentText>
                 </ContentWrapper>
             </IndividualWrapper>
