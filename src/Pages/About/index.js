@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutHeroSection from '../../Components/AboutHeroSection'
-import NavBar from '../../Components/NavBar'
+import SkillsComponent from '../../Components/SkillsComponent'
 import {
     AboutContainer
 } from './AboutElements'
@@ -35,8 +35,8 @@ const About = () => {
             animate='show'
             exit='exit'
         >
-            <NavBar/>
             <AboutHeroSection/>
+            <SkillsComponent/>
         </AboutContainer>
     )
 }
