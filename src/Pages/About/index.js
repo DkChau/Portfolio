@@ -1,9 +1,13 @@
 import React from 'react'
 import AboutHeroSection from '../../Components/AboutHeroSection'
+import CardComponent from '../../Components/CardComponent'
 import SkillsComponent from '../../Components/SkillsComponent'
+import StorySection from '../../Components/StorySection'
 import {
-    AboutContainer
+    AboutContainer,
+    AboutWrapper
 } from './AboutElements'
+import BlackScreen from '../../Components/BlackScreen'
 
 const About = () => {
 
@@ -36,7 +40,12 @@ const About = () => {
             exit='exit'
         >
             <AboutHeroSection/>
-            <SkillsComponent/>
+            <AboutWrapper>
+                <BlackScreen/>
+                <CardComponent/>
+                <StorySection/>
+                <SkillsComponent/>
+            </AboutWrapper>
         </AboutContainer>
     )
 }

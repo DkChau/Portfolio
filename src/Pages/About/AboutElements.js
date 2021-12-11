@@ -10,3 +10,7 @@ export const AboutContainer = styled(motion.div)`
     min-height:100vh;
     overflow-x:hidden;
 `
+export const AboutWrapper = styled.div`
+    height:100%;
+    position:relative;
+`
