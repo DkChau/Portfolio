@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import NavBar from './Components/NavBar';
 import Projects from './Pages/Projects';
+import UniqueProject from './Pages/UniqueProject'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/about' element={<About/>}/>
           <Route exact path='/projects' element={<Projects/>}/>
+          <Route exact path='/projects/:id' element={<UniqueProject/>}/>
         </Routes>
       </AnimatePresence>
     </>
