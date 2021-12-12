@@ -2,12 +2,14 @@ import React from 'react'
 import AboutHeroSection from '../../Components/AboutHeroSection'
 import CardComponent from '../../Components/CardComponent'
 import SkillsComponent from '../../Components/SkillsComponent'
-import StorySection from '../../Components/StorySection'
+import AboutTextSection from '../../Components/AboutTextSection'
 import {
     AboutContainer,
     AboutWrapper
 } from './AboutElements'
 import BlackScreen from '../../Components/BlackScreen'
+import {DataOne} from './Data'
+import ExperienceSection from '../../Components/ExperienceSection copy'
 
 const About = () => {
 
@@ -43,7 +45,8 @@ const About = () => {
             <AboutWrapper>
                 <BlackScreen/>
                 <CardComponent/>
-                <StorySection/>
+                <AboutTextSection data={DataOne}/>
+                <ExperienceSection/>
                 <SkillsComponent/>
             </AboutWrapper>
         </AboutContainer>
