@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../Components/Footer'
 import ViewProject from '../../Components/ViewProject'
 import { UniqueContainer } from './UniqueElements'
 
@@ -33,6 +34,7 @@ const UniqueProject = () => {
             exit='exit'
         >
             <ViewProject/>
+            <Footer/>
         </UniqueContainer>
     )
 }

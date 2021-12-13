@@ -3,12 +3,11 @@ import {motion} from 'framer-motion'
 
 export const ViewContainer = styled.div`
     width:100%;
-    height:100%;
     min-height:100vh;
 `
 export const ViewWrapper = styled.div`
     width:100%;
-    height:100%;
+    height:auto;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;

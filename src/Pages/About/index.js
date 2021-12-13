@@ -9,6 +9,7 @@ import {
 } from './AboutElements'
 import BlackScreen from '../../Components/BlackScreen'
 import {DataOne, DataTwo} from './Data'
+import Footer from '../../Components/Footer'
 
 const About = () => {
 
@@ -24,9 +25,9 @@ const About = () => {
         exit:{
             x:'100vw',
             transition:{
-                delay:0.3,
                 type:'tween',
-                duration:1,
+                delay:0.5,
+                duration:0.5,
                 ease:'easeInOut'
             }
         
@@ -52,6 +53,7 @@ const About = () => {
                 <AboutTextSection data={DataTwo}/>
                 <SkillsComponent/>
             </AboutWrapper>
+            <Footer/>
         </AboutContainer>
     )
 }

@@ -3,6 +3,7 @@ import HeroSection from '../../Components/HeroSection'
 import ProjectList from '../../Components/ProjectList'
 import { HomeContainer } from './HomeElements'
 import { ProjectData } from './Data'
+import Footer from '../../Components/Footer'
 
 const Home = () => {
 
@@ -36,6 +37,7 @@ const Home = () => {
         >
             <HeroSection/>
             <ProjectList data={ProjectData}/>
+            <Footer/>
         </HomeContainer>
     )
 }

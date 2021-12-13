@@ -6,6 +6,7 @@ import About from './Pages/About';
 import NavBar from './Components/NavBar';
 import Projects from './Pages/Projects';
 import UniqueProject from './Pages/UniqueProject'
+import Footer from './Components/Footer';
 
 function App() {
 
