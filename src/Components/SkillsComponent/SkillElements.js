@@ -10,7 +10,7 @@ export const SkillContainer = styled.div`
 export const SkillWrapper =styled.div`
     width:80%;
     height:100%;
-    max-width:1000px;
+    max-width:62.5rem;
     margin:0 auto;
     display:flex;
     flex-direction:column;
@@ -26,7 +26,7 @@ export const SkillGrid = styled.div`
     display:grid;
     width:100%;
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 50px;
+    grid-auto-rows: 3.125rem;
 `
 export const SkillItem = styled(motion.div)`
     display:grid;
@@ -35,7 +35,7 @@ export const SkillItem = styled(motion.div)`
     grid-template-columns: auto 1fr;
     justify-content:center;
     align-content:center;
-    padding:5px 0;
+    padding:.3125rem 0;
 `
 export const IconWrapper = styled.div`
     font-size:2rem;
@@ -47,7 +47,7 @@ export const IconWrapper = styled.div`
 export const Skill = styled.div`
     color:black;
     font-size:1.5rem;
-    padding:0 10px;
+    padding:0 .625rem;
     justify-self:center;
     align-self:center;
 `

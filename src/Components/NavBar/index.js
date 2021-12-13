@@ -1,17 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
     NavContainer,
-    NavLink,
-    NavLinkWrapper,
     NavLogo,
     NavLogoWrapper,
     NavWrapper,
-    LinkWrapper
+    IconWrapper
 } from './NavBarElements'
-import Logo from '../../Images/Logo.svg'
+import Logo3 from '../../Images/Logo3.svg'
+import {IconContext} from 'react-icons'
+import {GiHamburgerMenu} from 'react-icons/gi'
+import DragDown from '../DragDown'
+import {AnimatePresence, useCycle} from 'framer-motion'
 
-const NavBar = () => {
-    
+const NavBar = (props) => {
+
+    // const [toggleDrag , setToggleDrag] = useState(false);
+  
+    // const toggle = () =>{
+    //   setToggleDrag(!toggleDrag)
+    // }
+    const [open, cycleOpen] = useCycle(false, true);
+
     const navVariant = {
         hidden:{y:'-100vh'},
         show:{
@@ -27,11 +36,6 @@ const NavBar = () => {
             }
         },
     }
-    const routes = [
-        {to:'/about', text:'About'},
-        {to:'/projects', text:'Projects'},
-        {to:'/experience', text:'Experience'},
-    ]
     
     return (
         <NavContainer
@@ -40,19 +44,21 @@ const NavBar = () => {
             animate='show'
             exit='exit'
         >
+            <AnimatePresence>
+                {
+                    open && (
+                        <DragDown cycleOpen={cycleOpen}/>
+                    )
+                }
+            </AnimatePresence>
             <NavWrapper>
                 <NavLogoWrapper to='/'>
-                    <NavLogo src={Logo}></NavLogo>
+                    <NavLogo src={Logo3}></NavLogo>
                 </NavLogoWrapper>
-                <NavLinkWrapper>
-                    {routes.map((route,index)=>{
-                        return (
-                            <LinkWrapper key={`route${index}`}>
-                                <NavLink to={route.to}>{route.text}</NavLink>
-                            </LinkWrapper>
-                        )
-                    })}
-                </NavLinkWrapper>
+                <IconWrapper onClick={cycleOpen}>
+                    <GiHamburgerMenu/>
+                </IconWrapper>
+
             </NavWrapper>
         </NavContainer>
     )

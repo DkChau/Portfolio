@@ -18,7 +18,7 @@ import {
 const CardComponent = () => {
 
     const { scrollYProgress } = useViewportScroll()
-    const scrollRange = [-.2, -.5, -.8];
+    const scrollRange = [-.1, -.4, -.7];
     const xRange = ['-100%', '-50%', '0%']
     const opacityRange = [0, .5, 1]
 

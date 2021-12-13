@@ -1,6 +1,6 @@
 import { FaReact } from 'react-icons/fa'
 import {DiJavascript} from 'react-icons/di'
-import {SiExpress, SiHtml5, SiPassport, SiNodedotjs} from 'react-icons/si'
+import {SiExpress, SiHtml5, SiPassport, SiNodedotjs,SiRedux, SiMongodb} from 'react-icons/si'
 
 export const SkillData = [
     {name:'React', icon:FaReact},
@@ -10,4 +10,6 @@ export const SkillData = [
     {name:'Css', icon:DiJavascript},
     {name:'Passport', icon:SiPassport},
     {name:'Express', icon:SiExpress},
+    {name:'MongoDB', icon:SiMongodb},
+    {name:'Redux', icon:SiRedux},
 ]

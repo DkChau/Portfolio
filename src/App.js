@@ -7,6 +7,8 @@ import NavBar from './Components/NavBar';
 import Projects from './Pages/Projects';
 import UniqueProject from './Pages/UniqueProject'
 import Footer from './Components/Footer';
+import {useState} from 'react';
+import DragDown from './Components/DragDown';
 
 function App() {
 

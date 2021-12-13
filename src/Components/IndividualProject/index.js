@@ -30,6 +30,11 @@ const IndividualProject = (props) => {
     });
     const animation = useAnimation();
 
+    const containerVariant = {
+        exit:{
+            opacity:0
+        }
+    }
     const projectVariants = {
         hidden:{
             clipPath: 'inset(0 100% 0 0)'
@@ -42,9 +47,6 @@ const IndividualProject = (props) => {
                 duration:0.5,
                 ease:'easeInOut'
             }
-        },
-        exit:{
-            opacity:0
         },
     }
 
@@ -60,12 +62,9 @@ const IndividualProject = (props) => {
                 type:'tween',
                 ease:'easeInOut'
             }
-        }
+        },
     }
     const wrapperVariants ={
-        hidden:{
-
-        },
         show:{
             backgroundColor:['black', 'black'],
             clipPath: ['inset(0 0% 0 0)', 'inset(0 0 0 100%)'],
@@ -73,7 +72,7 @@ const IndividualProject = (props) => {
                 duration:0.3,
                 ease:'easeInOut'
             }
-        }
+        },
     }
 
     useEffect(()=>{
@@ -86,7 +85,7 @@ const IndividualProject = (props) => {
     },[animation, inView])
 
     return (
-        <IndividualContainer ref={ref}>
+        <IndividualContainer ref={ref} variants={containerVariant}>
             <IndividualWrapper imgFirst={props.data.imgFirst}>
                 <ImageWrapper
                     animate={animation}

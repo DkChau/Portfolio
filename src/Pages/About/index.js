@@ -33,6 +33,12 @@ const About = () => {
         
         }
     }
+    
+    const wrapperVariant = {
+        exit:{
+            opacity:0,
+        }
+    }
 
     useEffect(()=>{ //Temp fix since you shouldnt be able to go to same page anyways
         window.scrollTo(0,0)

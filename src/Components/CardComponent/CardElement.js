@@ -14,8 +14,8 @@ export const CardWrapper = styled(motion.div)`
     width:80%;
     height:80%;
     margin: 0 auto;
-    max-width:800px;
-    max-height:425px;
+    max-width:50rem;
+    max-height:26.5rem;
     display:flex;
     align-items: center;
     border-radius: 25px;

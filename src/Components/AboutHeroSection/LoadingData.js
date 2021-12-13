@@ -7,24 +7,28 @@ export const rectangles = (()=>{
         if(i<=3 || i>=16){
             if(i%2===0){
                 testArray.push({
-                    width:`-${70}%`
+                    width:`-${70}%`,
+                    widthResponsive:'-90%'
                 })
             }
             else{
                 testArray.push({
-                    width:`${70}%`
+                    width:`${70}%`,
+                    widthResponsive:'90%'
                 })  
             }
         }
         else{
             if(i%2===0){
                 testArray.push({
-                    width:`-${startWidth}%`
+                    width:`-${startWidth}%`,
+                    widthResponsive:'-90%'
                 })
             }
             else{
                 testArray.push({
-                    width:`${startWidth}%`
+                    width:`${startWidth}%`,
+                    widthResponsive:'90%'
                 })  
             }
         }

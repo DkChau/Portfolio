@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
     color:${props=>props.txtColor};
 `
 export const AboutWrapper = styled.div`
-    width:70%;
+    width:80%;
     height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;

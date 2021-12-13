@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
+import useWindowDimensions from '../../Hooks/dimensions'
 import SingleRectangle from '../SingleRectangle'
 import {
     LoadingContainer,
@@ -6,11 +7,31 @@ import {
 
 const LoadingScreen = (props) => {
 
+    // const {height, width} = useWindowDimensions();
+    // const [responsive,setResponsive] = useState(false)
+
+    // useEffect(()=>{
+    //     console.log(width, responsive)
+    //     if(width>1000){
+    //         setResponsive(false)
+    //     }
+    //     else{
+    //         setResponsive(true)
+    //     }
+    // },[width, responsive])
+
     const container = {
+        hidden:{
+            transition: {
+                beforeChildren:true,
+                staggerChildren: 0.05
+            }
+        },
         show: {
-          transition: {
-            staggerChildren: 0.05
-          }
+            transition: {
+                // beforeChildren:true,
+                staggerChildren: 0.05
+            }
         },
     }
     
@@ -21,7 +42,7 @@ const LoadingScreen = (props) => {
         >
             {props.rectangles.map((rectangle,index)=>{
                 return (
-                    <SingleRectangle data={rectangle}/>
+                    <SingleRectangle key={'rectangle' + index} width={rectangle.width} widthResponsive={rectangle.widthResponsive}/>
                 )
             })}
         </LoadingContainer>

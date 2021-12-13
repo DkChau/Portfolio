@@ -8,7 +8,9 @@ import Footer from '../../Components/Footer'
 const Home = () => {
 
     const transitionVariant = {
-        hidden:{x:'-100vw'},
+        hidden:{
+            x:'-100vw',
+        },
         show:{
             x:'0',
             transition:{

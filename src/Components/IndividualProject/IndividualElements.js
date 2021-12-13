@@ -4,9 +4,9 @@ import {motion} from 'framer-motion';
 
 export const IndividualContainer = styled(motion.div)`
     width:100%;
-    max-width:1400px;
+    max-width:87.5rem;
     margin:0 auto;
-    padding:120px 0;
+    padding:6rem 0;
 `
 export const IndividualWrapper = styled.div`
     width:100%;
@@ -18,19 +18,19 @@ export const IndividualWrapper = styled.div`
 `
 export const ImageWrapper = styled(motion.div)`
     display:flex;
-    width:500px;
+    width:31.25rem;
     height:100%;
     overflow:hidden;
     align-items: center;
     grid-area:image;
 `
 export const ProjectImage = styled.img`
-    height:400px;
+    height:25rem;
 
 `
 export const ContentWrapper = styled(motion.div)`
     width:100%;
-    height:100%;
+    height:101%;
     display:flex;
     justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'};
     align-items: center;
@@ -74,7 +74,7 @@ export const ArrowWrapper = styled.span`
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     width:100%;
-    height:64px;
+    height:4rem;
     transition:transform 0.3s ease;
     font-size:1rem;
     justify-content:center;
@@ -86,20 +86,20 @@ export const Arrow = styled.span`
     align-self:center;
     justify-self: center;
     justify-content: center;
-    font-size:32px;
+    font-size:2rem;
 `
 export const LinkWrapper = styled(Link)`
     display:flex;
     border:1px solid black;
-    height:32px;
-    width:150px;
+    height:2rem;
+    width:9.375rem;
     text-decoration:none;
     color: #000000;
     overflow-y: hidden;
 
     &:hover{
         ${ArrowWrapper}{
-            transform:translateY(-32px);
+            transform:translateY(-2rem);
         }
     }
 `
