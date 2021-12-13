@@ -1,20 +1,24 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
 export const CardContainer = styled.div`
     width:100%;
     /* background:pink; // */
     padding:1rem 0;
-    height:50vh;
-`
-export const CardWrapper = styled.div`
-    border:3px solid black;
-    width:80%;
-    height:100%;
-    margin: 0 auto;
-    max-width:800px;
-    border-radius: 25px;
+    height:80vh;
     display:flex;
     align-items: center;
+`
+export const CardWrapper = styled(motion.div)`
+    border:3px solid black;
+    width:80%;
+    height:80%;
+    margin: 0 auto;
+    max-width:800px;
+    max-height:425px;
+    display:flex;
+    align-items: center;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `
 export const CardGrid = styled.div`

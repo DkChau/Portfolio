@@ -8,7 +8,7 @@ export const NavContainer = styled(motion.div)`
     justify-content: center;
     align-items: center;
     background:transparent;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     z-index:1;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import AboutHeroSection from '../../Components/AboutHeroSection'
 import CardComponent from '../../Components/CardComponent'
 import SkillsComponent from '../../Components/SkillsComponent'
@@ -8,8 +8,7 @@ import {
     AboutWrapper
 } from './AboutElements'
 import BlackScreen from '../../Components/BlackScreen'
-import {DataOne} from './Data'
-import ExperienceSection from '../../Components/ExperienceSection copy'
+import {DataOne, DataTwo} from './Data'
 
 const About = () => {
 
@@ -34,6 +33,10 @@ const About = () => {
         }
     }
 
+    useEffect(()=>{ //Temp fix since you shouldnt be able to go to same page anyways
+        window.scrollTo(0,0)
+    },[])
+    
     return (
         <AboutContainer
             variants={transitionVariant}
@@ -46,7 +49,7 @@ const About = () => {
                 <BlackScreen/>
                 <CardComponent/>
                 <AboutTextSection data={DataOne}/>
-                <ExperienceSection/>
+                <AboutTextSection data={DataTwo}/>
                 <SkillsComponent/>
             </AboutWrapper>
         </AboutContainer>

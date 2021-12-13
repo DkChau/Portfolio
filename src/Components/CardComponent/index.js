@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     CardBottomRow,
     CardContainer,
@@ -10,11 +10,24 @@ import {
     CardText,
     CardSection
 } from './CardElement'
+import {
+    useViewportScroll,
+    useTransform
+} from 'framer-motion'
 
 const CardComponent = () => {
+
+    const { scrollYProgress } = useViewportScroll()
+    const scrollRange = [-.2, -.5, -.8];
+    const xRange = ['-100%', '-50%', '0%']
+    const opacityRange = [0, .5, 1]
+
+    const x = useTransform(scrollYProgress, scrollRange, xRange)
+    const opacity = useTransform(scrollYProgress, scrollRange, opacityRange)
+
     return (
         <CardContainer>
-            <CardWrapper>
+            <CardWrapper style={{ x:x , opacity:opacity}}>
                 <CardGrid>
                     <CardHeadingWrapper>
                         <CardContent>
