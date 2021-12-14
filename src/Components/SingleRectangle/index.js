@@ -1,10 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {
     RectContainer,
     RectWrapper,
 } from './RectangleElements'
-import useWindowDimensions from '../../Hooks/dimensions'
-import {useAnimation, useCycle} from 'framer-motion';
 
 const SingleRectangle = (props) => {
 

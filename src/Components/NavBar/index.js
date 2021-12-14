@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {
     NavContainer,
     NavLogo,
@@ -7,7 +7,6 @@ import {
     IconWrapper
 } from './NavBarElements'
 import Logo3 from '../../Images/Logo3.svg'
-import {IconContext} from 'react-icons'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import DragDown from '../DragDown'
 import {AnimatePresence, useCycle} from 'framer-motion'

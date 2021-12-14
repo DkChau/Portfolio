@@ -18,7 +18,7 @@ export const NavWrapper = styled.div`
     width:90%;
     margin:1rem auto 0 auto;
     /* max-width:500px; */
-    height:auto;
+    height:70px;
     align-items: flex-end;
     justify-content: space-between;
     padding:10px 0;
@@ -39,19 +39,3 @@ export const IconWrapper = styled.div`
     color:red;
     display:flex;
 `
-// export const NavLinkWrapper = styled.div`
-//     display:flex;
-//     justify-self:end;
-// `
-// export const LinkWrapper = styled.div`
-//     padding:0 15px;
-//     display:flex;
-//     justify-content: center;
-//     align-items: center;
-// `
-// export const NavLink = styled(Link)`
-//     text-decoration:none;
-//     color:black;
-//     font-size:1.5rem;
-//     font-weight:300;
-// `

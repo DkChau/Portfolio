@@ -18,10 +18,11 @@ export const FooterWrapper = styled(motion.div)`
     align-items: center;
 `
 export const LogoWrapper = styled.div`
-    justify-self:center;
+    display:flex;
+    align-content:center;
 `
-export const Logo = styled.div`
-
+export const Logo = styled.img`
+    height:2.5rem;
 `
 export const TextWrapper = styled.div`
     justify-self:center;
@@ -30,8 +31,12 @@ export const Text = styled.div`
 
 `
 export const LinkWrapper = styled.div`
-    justify-self:center;
+    justify-self:end;
+
 `
 export const PageLink = styled.a`
-
+    font-size:2rem;
+    display:flex;
+    align-content:center;
+    
 `

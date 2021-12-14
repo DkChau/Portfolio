@@ -1,5 +1,4 @@
-import React,{useEffect, useState} from 'react'
-import useWindowDimensions from '../../Hooks/dimensions'
+import React from 'react'
 import SingleRectangle from '../SingleRectangle'
 import {
     LoadingContainer,

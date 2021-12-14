@@ -5,7 +5,8 @@ import SkillsComponent from '../../Components/SkillsComponent'
 import AboutTextSection from '../../Components/AboutTextSection'
 import {
     AboutContainer,
-    AboutWrapper
+    AboutWrapper,
+    ScreenWrapper
 } from './AboutElements'
 import BlackScreen from '../../Components/BlackScreen'
 import {DataOne, DataTwo} from './Data'
@@ -52,13 +53,15 @@ const About = () => {
             exit='exit'
         >
             <AboutHeroSection/>
-            <AboutWrapper>
+            <ScreenWrapper>
                 <BlackScreen/>
-                <CardComponent/>
-                <AboutTextSection data={DataOne}/>
-                <AboutTextSection data={DataTwo}/>
+                <AboutWrapper variants={wrapperVariant}>
+                    <CardComponent/>
+                    <AboutTextSection data={DataOne}/>
+                    <AboutTextSection data={DataTwo}/>
+                </AboutWrapper>
                 <SkillsComponent/>
-            </AboutWrapper>
+            </ScreenWrapper>
             <Footer/>
         </AboutContainer>
     )

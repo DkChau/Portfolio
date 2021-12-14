@@ -66,7 +66,9 @@ const HeroSection = () => {
                 >
                   <HeroText
                     variants={textVariant}
-                  >DUONG CHAU</HeroText>
+                  >
+                    DUONG CHAU
+                  </HeroText>
                 </AnimationWrapper>
                 <HeroSubText variants={subtextVariant}>An Aspiring Web Designer</HeroSubText>
               </HeroWrapper>

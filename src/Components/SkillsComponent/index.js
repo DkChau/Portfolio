@@ -55,6 +55,7 @@ const SkillsComponent = () => {
                         return (
                             <AnimationWrapper
                                 ref={ref}
+                                key={`skill${index}`}
                             >
                                 <SkillItem
                                     initial='hidden'

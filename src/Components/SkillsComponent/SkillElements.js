@@ -26,13 +26,14 @@ export const SkillGrid = styled.div`
     display:grid;
     width:100%;
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 3.125rem;
+    grid-auto-rows:2.2rem;
+    grid-gap:2rem;
 `
 export const SkillItem = styled(motion.div)`
     display:grid;
     height:100%;
     width:100%;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content:center;
     align-content:center;
     padding:.3125rem 0;
@@ -47,9 +48,9 @@ export const IconWrapper = styled.div`
 export const Skill = styled.div`
     color:black;
     font-size:1.5rem;
-    padding:0 .625rem;
-    justify-self:center;
-    align-self:center;
+    /* padding:0 .625rem; */
+    /* justify-self:center;
+    align-self:center; */
 `
 export const AnimationWrapper = styled.div`
     width:auto;

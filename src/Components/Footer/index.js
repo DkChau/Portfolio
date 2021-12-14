@@ -11,10 +11,12 @@ import {
     TextWrapper,
     PageLink
 } from './FooterElements'
+import Logo3 from '../../Images/Logo3.svg'
+import {SiGithub} from 'react-icons/si'
 
 const Footer = () => {
 
-    const [ref, inView, entry] = useInView({
+    const [ref, inView] = useInView({
         threshold:0.7,
         triggerOnce:true
     })
@@ -55,13 +57,15 @@ const Footer = () => {
                 exit='exit'
             >
                 <LogoWrapper>
-                    <Logo>DKC</Logo>
+                    <Logo src={Logo3}></Logo>
                 </LogoWrapper>
                 <TextWrapper>
-                    <Text>All Rights Reserved</Text>
+                    <Text>@ All Rights Reserved 2021</Text>
                 </TextWrapper>
                 <LinkWrapper>
-                    <PageLink>Gh Link here</PageLink>
+                    <PageLink>
+                        <SiGithub></SiGithub>
+                    </PageLink>
                 </LinkWrapper>
             </FooterWrapper>
         </FooterContainer>

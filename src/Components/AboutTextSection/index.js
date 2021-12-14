@@ -13,7 +13,7 @@ import {useAnimation} from 'framer-motion';
 
 const AboutTextSection = (props) => {
 
-    const {ref,inView, entry} = useInView({
+    const {ref,inView} = useInView({
         threshold:0.7,
         triggerOnce:true
     })
@@ -61,7 +61,7 @@ const AboutTextSection = (props) => {
         else{
 
         }
-    },[inView])
+    },[inView, animation])
 
     return (
         <AboutContainer 

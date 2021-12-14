@@ -2,7 +2,10 @@ import React from 'react'
 import {
     DragContainer,
     LinkWrapper,
-    PageLink
+    PageLink,
+    IconWrapper,
+    DragWrapper,
+    PositionWrapper,
 } from './DragDownElements'
 import {ImCross} from 'react-icons/im'
 
@@ -10,18 +13,42 @@ const DragDown = (props) => {
 
     const dragVariant = {
         hidden:{
-            x:'-100%'
+            // x:'-100%'
         },
         show:{
-            x:0,
+            // x:0,
             transition:{
-                duration:0.5
+                when:'beforeChildren',
+                staggerChildren:0.2,
             }
         },
         exit:{
             x:'-100%',
             transition:{
-                duration:0.5
+                when:'afterChildren',
+                staggerChildren:0.2,
+            }
+        }
+    }
+
+    const sectionVariant = {
+        hidden:{
+            x:'-100%'
+        },
+        show:{
+            x:0,
+            transition:{
+                // duration:0.5
+                type:'tween',
+                ease:'easeInOut'
+            }
+        },
+        exit:{
+            x:'-100%',
+            transition:{
+                // duration:0.5
+                type:'tween',
+                ease:'easeInOut'
             }
         }
     }
@@ -33,15 +60,22 @@ const DragDown = (props) => {
     ]
 
     return (
-        <DragContainer variants={dragVariant} initial='hidden' exit='exit' show='show'>
-            <ImCross onClick={props.cycleOpen}></ImCross>
-            {routes.map((route,index)=>{
-                return (
-                    <LinkWrapper onClick={props.cycleOpen} key={`link${index}`}>
-                        <PageLink to={route.to}>{route.text}</PageLink>
-                    </LinkWrapper>
-                )
-            })}
+        <DragContainer variants={dragVariant} initial='hidden' animate='show' exit='exit' >
+            <DragWrapper> 
+                <IconWrapper variants={sectionVariant}>
+                    <PositionWrapper>
+                        <ImCross onClick={props.cycleOpen}></ImCross>
+                    </PositionWrapper>
+                </IconWrapper>
+
+                {routes.map((route,index)=>{
+                    return (
+                        <LinkWrapper variants={sectionVariant} key={`link${index}`}>
+                            <PageLink onClick={props.cycleOpen} to={route.to}>{route.text}</PageLink>
+                        </LinkWrapper>
+                    )
+                })}
+            </DragWrapper> 
         </DragContainer>
     )
 }

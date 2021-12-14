@@ -43,7 +43,7 @@ const ViewProject = (props) => {
                             {
                                 project.tags.map((tag,index)=>{
                                     return (
-                                        <SingleTag>{tag} / </SingleTag>
+                                        <SingleTag key={`tag${index}`}>{tag} / </SingleTag>
                                     )
                                 })
                             }
