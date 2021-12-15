@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     BannerContainer,
     BannerContent,
@@ -9,19 +9,63 @@ import {
     BannerWrapper,
     LinkHeader
 } from './BannerElements'
+import {useInView} from 'react-intersection-observer'
+import {useAnimation} from 'framer-motion'
+
 const BannerSection = (props) => {
+
+    const [ref, inView] = useInView({
+        threshold:0.8,
+        triggerOnce:true
+    })
+
+    const animation = useAnimation()
+
+    const bannerVariant = {
+        hidden:{
+            y:'-100%'
+        },
+        show:{
+            y:0,
+            transition:{
+                duration:1
+            }
+        },
+        exit:{
+            opacity:0
+        },
+    }
+    useEffect(()=>{
+        if(inView){
+            animation.start('show')
+        }
+        else{
+            // animation.start('hidden')
+        }
+    },[inView, animation])
     return (
         <BannerContainer>
             <BannerWrapper>
-                <BannerContent>
+                <BannerContent ref={ref}>
                     <BannerTextWrapper>
-                        <BannerText>
+                        <BannerText
+                            variants={bannerVariant}
+                            initial='hidden'
+                            animate={animation}
+                            exit='exit'
+                        >
                             {props.data.text}
                         </BannerText>
                     </BannerTextWrapper>
+                    <BannerTextWrapper>
                     {
                         props.data.link && (
-                            <BannerLinkWrapper>
+                            <BannerLinkWrapper
+                                variants={bannerVariant}
+                                initial='hidden'
+                                animate={animation}
+                                exit='exit'
+                            >
                                 {/* <LinkHeader>Quick Links: </LinkHeader> */}
                                 <BannerLink to='/'>
                                     Home
@@ -34,7 +78,8 @@ const BannerSection = (props) => {
                                 </BannerLink>
                             </BannerLinkWrapper>
                         )
-                    }
+                    }               
+                    </BannerTextWrapper>
                 </BannerContent>
             </BannerWrapper>
         </BannerContainer>

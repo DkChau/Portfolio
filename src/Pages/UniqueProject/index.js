@@ -1,10 +1,13 @@
 import React from 'react'
 import Footer from '../../Components/Footer'
 import ViewProject from '../../Components/ViewProject'
-import { UniqueContainer } from './UniqueElements'
+import { ScreenWrapper, UniqueContainer, UniqueWrapper } from './UniqueElements'
 import {useParams} from 'react-router-dom';
 import {projectData} from '../../Pages/UniqueProject/Data';
 import ProjectDescriptionSection from '../../Components/ProjectDescriptionSection';
+import BlackScreen from '../../Components/BlackScreen';
+import BannerSection from '../../Components/BannerSection';
+import {bannerData} from './BannerData'
 
 const UniqueProject = () => {
 
@@ -44,7 +47,13 @@ const UniqueProject = () => {
             exit='exit'
         >
             <ViewProject project={project}/>
-            <ProjectDescriptionSection project={project}/>
+            <ScreenWrapper>
+                <BlackScreen/>
+                <UniqueWrapper>
+                    <ProjectDescriptionSection project={project}/>
+                    <BannerSection data={bannerData}/>
+                </UniqueWrapper>
+            </ScreenWrapper>
             <Footer/>
         </UniqueContainer>
     )

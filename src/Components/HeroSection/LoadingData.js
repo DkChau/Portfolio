@@ -1,6 +1,6 @@
 export const rectangles = (()=>{
     let testArray=[];
-    let startWidth=55;
+    let startWidth=50;
     let changeWidth=5;
     let numRect = 20;
 

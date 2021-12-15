@@ -10,3 +10,9 @@ export const ProjectContainer = styled(motion.div)`
     min-height:100vh;
     overflow-x:hidden;
 `
+export const ProjectWrapper = styled(motion.div)`
+    height:100%;
+`
+export const ScreenWrapper = styled.div`
+    position:relative;
+`

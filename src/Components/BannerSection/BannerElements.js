@@ -23,20 +23,21 @@ export const BannerContent = styled.div`
     align-items:center;
 `
 export const BannerTextWrapper = styled.div`
-
+    overflow:hidden;
 `
-export const BannerText = styled.div`
+export const BannerText = styled(motion.div)`
     font-size:3rem;
     font-weight:600;
     padding:2rem 0;
 `
-export const BannerLinkWrapper = styled.div`
+export const BannerLinkWrapper = styled(motion.div)`
     display:flex;
     font-size:1.3rem;
     /* justify-content: center; */
     align-items: center;
 `
 export const LinkHeader = styled.div`
+    overflow:hidden;
 `
 export const BannerLink = styled(Link)`
     text-decoration:none;

@@ -20,6 +20,12 @@ export const InfoDescription = styled.div`
     font-size:1.2rem;
     font-family:'lora';
 `
+export const FeatureWrapper = styled.ul`
+
+`
+export const Feature = styled.li`
+
+`
 export const GridWrapper = styled.div`
     display:grid;
     width:70%;

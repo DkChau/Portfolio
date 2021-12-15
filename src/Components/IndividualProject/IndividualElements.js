@@ -30,7 +30,7 @@ export const ProjectImage = styled.img`
 `
 export const ContentWrapper = styled(motion.div)`
     width:100%;
-    height:99%;
+    height:100%;
     display:flex;
     justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'};
     align-items: center;

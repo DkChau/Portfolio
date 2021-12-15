@@ -9,7 +9,9 @@ import {
     ProjectLink,
     SingleTag,
     GridWrapper,
-    TagContent
+    TagContent,
+    FeatureWrapper,
+    Feature
 } from './DescriptionElements'
 
 const ProjectDescriptionSection = (props) => {
@@ -17,6 +19,14 @@ const ProjectDescriptionSection = (props) => {
         <InfoWrapper>
             <InfoHeading>Project Description</InfoHeading>
             <InfoDescription>{props.project.description}</InfoDescription>
+            <FeatureWrapper>
+                {props.project.features.map((feature,index)=>{
+                    return (
+                        <Feature>{feature}</Feature>
+                    )
+                })}
+
+            </FeatureWrapper>
             <GridWrapper>
                 <TagContent>
                     <TagHeader>Tools used to create this project: </TagHeader>

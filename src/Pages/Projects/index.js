@@ -1,11 +1,12 @@
 import React from 'react'
 import ProjectList from '../../Components/ProjectList'
-import {ProjectContainer} from './ProjectElements'
+import {ProjectContainer, ProjectWrapper, ScreenWrapper} from './ProjectElements'
 import { ProjectData } from './Data'
 import ProjectHeroSection from '../../Components/ProjectHeroSection'
 import Footer from '../../Components/Footer'
 import BannerSection from '../../Components/BannerSection'
 import {bannerData1, bannerData2} from './BannerData'
+import BlackScreen from '../../Components/BlackScreen'
 
 const Projects = () => {
 
@@ -38,9 +39,14 @@ const Projects = () => {
             exit='exit'
         >
             <ProjectHeroSection/>
-            <BannerSection data={bannerData1}/>
-            <ProjectList data={ProjectData}/>
-            <BannerSection  data={bannerData2}/>
+            <ScreenWrapper>
+                <BlackScreen/>
+                <ProjectWrapper>
+                    <BannerSection data={bannerData1}/>
+                    <ProjectList data={ProjectData}/>
+                    <BannerSection  data={bannerData2}/>
+                </ProjectWrapper>
+            </ScreenWrapper>
             <Footer/>
         </ProjectContainer>
     )

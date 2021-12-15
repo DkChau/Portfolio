@@ -1,11 +1,12 @@
 import React from 'react'
 import HeroSection from '../../Components/HeroSection'
 import ProjectList from '../../Components/ProjectList'
-import { HomeContainer } from './HomeElements'
+import { HomeContainer, HomeWrapper, ScreenWrapper } from './HomeElements'
 import { ProjectData } from './Data'
 import Footer from '../../Components/Footer'
 import BannerSection from '../../Components/BannerSection'
 import {bannerData1, bannerData2} from './BannerData'
+import BlackScreen from '../../Components/BlackScreen'
 
 const Home = () => {
 
@@ -40,9 +41,14 @@ const Home = () => {
             exit='exit'
         >
             <HeroSection/>
-            <BannerSection data={bannerData1}/>
-            <ProjectList data={ProjectData}/>
-            <BannerSection data={bannerData2}/>
+            <ScreenWrapper>
+                <BlackScreen/>
+                <HomeWrapper>
+                    <BannerSection data={bannerData1}/>
+                    <ProjectList data={ProjectData}/>
+                    <BannerSection data={bannerData2}/>
+                </HomeWrapper>
+            </ScreenWrapper>
             <Footer/>
         </HomeContainer>
     )
