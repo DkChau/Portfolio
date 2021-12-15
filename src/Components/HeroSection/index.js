@@ -5,8 +5,11 @@ import {
     HeroSubText,
     HeroText,
     HeroWrapper,
-    AnimationWrapper
+    AnimationWrapper,
+    ProjectLink,
+    LinkWrapper
 } from './HeroElements'
+import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 import { rectangles } from './LoadingData'
 
 const HeroSection = () => {
@@ -18,11 +21,12 @@ const HeroSection = () => {
       show:{
         opacity:1,
         transition:{
-          delay:1.3
+          delay:1.3,
+          duration:0.3
         }
       },
       exit:{
-
+        opacity:0,
       }
     }
 
@@ -54,6 +58,21 @@ const HeroSection = () => {
         y:'100%'
       }
     }
+    const linkVariant = {
+      hidden:{
+        x:'-100%',
+      },
+      show:{
+        x:0,
+        transition:{
+          delay:2.2,
+          duration:0.5
+        }
+      },
+      exit:{
+        opacity:0
+      }
+    }
 
     return (
       <React.Fragment>
@@ -71,6 +90,12 @@ const HeroSection = () => {
                   </HeroText>
                 </AnimationWrapper>
                 <HeroSubText variants={subtextVariant}>An Aspiring Web Designer</HeroSubText>
+                <LinkWrapper  variants={linkVariant}>
+                  <ProjectLink to='/projects'>
+                    View my Projects
+                  </ProjectLink>
+                  <HiOutlineArrowNarrowRight></HiOutlineArrowNarrowRight>
+                </LinkWrapper>
               </HeroWrapper>
           </HeroContainer>
       </React.Fragment>

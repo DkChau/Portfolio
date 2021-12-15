@@ -54,9 +54,9 @@ const DragDown = (props) => {
     }
 
     const routes = [
+        {to:'/', text:'Home'},
         {to:'/about', text:'About'},
         {to:'/projects', text:'Projects'},
-        {to:'/experience', text:'Experience'},
     ]
 
     return (

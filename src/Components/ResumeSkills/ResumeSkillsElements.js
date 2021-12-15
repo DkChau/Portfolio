@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 export const SkillsContainer = styled.div`
     width:100%;
@@ -14,16 +15,17 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr;
     width:70%;
+    align-items: start;
 
 `   
-export const Header = styled.p`
+export const Header = styled(motion.div)`
     display:flex;
     font-size:2rem;
     padding:0 3rem;
     font-weight:700;
     justify-self: center;
 `
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled(motion.div)`
     display:grid;
     grid-template-columns: 1fr;
     grid-auto-rows:auto;
@@ -46,4 +48,10 @@ export const Item = styled.span`
     padding-left: .8rem;
     font-size:1.2rem;
     font-weight:300;
+`
+export const AnimationWrapper = styled.div`
+    width:auto;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
 `

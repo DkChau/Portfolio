@@ -10,7 +10,10 @@ export const projectData = {
         tags:[
             'HTML',
             'CSS',
-            'Javascript'
+            'Javascript',
+            'Express',
+            'JWT Auth',
+            'React',
         ],
         appSite:'#',
         codeSite:'#',

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 export const HeroContainer = styled(motion.div)`
     background:#ffffff;
@@ -29,6 +30,20 @@ export const HeroSubText = styled(motion.h2)`
     color:#000000;
     font-family:'lora';
 
+`
+export const LinkWrapper = styled(motion.div)`
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:2rem;
+    width:100%;
+`
+export const ProjectLink = styled(Link)`
+    font-size:1.6rem;
+    text-decoration:none;
+    font-family:'lora';
+    color:black;
+    padding:2rem 1rem;
 `
 export const AnimationWrapper = styled(motion.div)`
     height:auto;

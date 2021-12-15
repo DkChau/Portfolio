@@ -2,6 +2,9 @@ import React from 'react'
 import Footer from '../../Components/Footer'
 import ViewProject from '../../Components/ViewProject'
 import { UniqueContainer } from './UniqueElements'
+import {useParams} from 'react-router-dom';
+import {projectData} from '../../Pages/UniqueProject/Data';
+import ProjectDescriptionSection from '../../Components/ProjectDescriptionSection';
 
 const UniqueProject = () => {
 
@@ -26,6 +29,13 @@ const UniqueProject = () => {
         }
     }
     
+    const {id} = useParams();
+    const project = projectData[id]
+
+    if(!project){
+        return <div>post not found</div>
+    }
+
     return (
         <UniqueContainer
             variants={transitionVariant}
@@ -33,7 +43,8 @@ const UniqueProject = () => {
             animate='show'
             exit='exit'
         >
-            <ViewProject/>
+            <ViewProject project={project}/>
+            <ProjectDescriptionSection project={project}/>
             <Footer/>
         </UniqueContainer>
     )

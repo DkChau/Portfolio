@@ -16,7 +16,7 @@ export const SkillWrapper =styled.div`
     flex-direction:column;
     justify-content: center;
 `
-export const SkillHeading = styled.div`
+export const SkillHeading = styled(motion.div)`
     font-size:3rem;
     padding:1rem 0;
     font-weight:700;

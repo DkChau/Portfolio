@@ -43,7 +43,7 @@ const NavBar = (props) => {
             animate='show'
             exit='exit'
         >
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
                 {
                     open && (
                         <DragDown cycleOpen={cycleOpen}/>

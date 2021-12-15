@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 export const EducationContainer = styled.div`
     width:100%;
@@ -13,16 +14,17 @@ export const EducationWrapper = styled.div`
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr;
     width:70%;
+    align-items: start;
 
 `   
-export const Header = styled.p`
+export const Header = styled(motion.div)`
     display:flex;
+    justify-content: flex-start;
     font-size:2rem;
     padding:0 3rem;
-    font-weight:700;
-    justify-self: center;
+    font-weight:700; 
 `
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled(motion.div)`
     display:grid;
     grid-template-columns: 1fr;
     grid-auto-rows:auto;
@@ -58,4 +60,11 @@ export const Classes = styled.div`
     padding-top:.2rem;
     font-size:1.1rem;
     word-spacing:normal;
+`
+
+export const AnimationWrapper = styled.div`
+    width:auto;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
 `

@@ -11,6 +11,7 @@ import {
 import BlackScreen from '../../Components/BlackScreen'
 import {DataOne, DataTwo} from './Data'
 import Footer from '../../Components/Footer'
+import ExperienceSection from '../../Components/ExperienceSection'
 
 const About = () => {
 
@@ -57,10 +58,11 @@ const About = () => {
                 <BlackScreen/>
                 <AboutWrapper variants={wrapperVariant}>
                     <CardComponent/>
-                    <AboutTextSection data={DataOne}/>
+                    <AboutTextSection data={DataOne}/>               
+                    <SkillsComponent/>
                     <AboutTextSection data={DataTwo}/>
+                    <ExperienceSection/>
                 </AboutWrapper>
-                <SkillsComponent/>
             </ScreenWrapper>
             <Footer/>
         </AboutContainer>

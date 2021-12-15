@@ -23,6 +23,20 @@ const SkillsComponent = () => {
 
     const animation = useAnimation();
 
+    const headingVariant = {
+        hidden:{
+            opacity:0
+          },
+          show:{
+            opacity:1,
+            transition:{
+                duration:0.5
+            }
+          },
+          exit:{
+            opacity:0
+          }
+    }
     const textVariant = {
         hidden:{
           y:'100%'
@@ -48,18 +62,23 @@ const SkillsComponent = () => {
     },[animation, inView])
     return (
         <SkillContainer>
-            <SkillWrapper>
-                <SkillHeading>Skills</SkillHeading>
+            <SkillWrapper ref={ref}>
+                <SkillHeading
+                    initial='hidden'
+                    animate={animation}
+                    exit='exit'
+                    variants={headingVariant}
+                >Skills</SkillHeading>
                 <SkillGrid>
                     {SkillData.map((skill,index)=>{
                         return (
                             <AnimationWrapper
-                                ref={ref}
                                 key={`skill${index}`}
                             >
                                 <SkillItem
                                     initial='hidden'
                                     animate={animation}
+                                    exit='exit'
                                     variants={textVariant}
                                 >
                                     <IconWrapper>
