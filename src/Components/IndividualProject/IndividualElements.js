@@ -6,7 +6,7 @@ export const IndividualContainer = styled(motion.div)`
     width:100%;
     max-width:87.5rem;
     margin:0 auto;
-    padding:6rem 0;
+    padding:5rem 0 6rem 0;
 `
 export const IndividualWrapper = styled.div`
     width:100%;
@@ -30,7 +30,7 @@ export const ProjectImage = styled.img`
 `
 export const ContentWrapper = styled(motion.div)`
     width:100%;
-    height:101%;
+    height:99%;
     display:flex;
     justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'};
     align-items: center;

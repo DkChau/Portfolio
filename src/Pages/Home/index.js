@@ -4,6 +4,8 @@ import ProjectList from '../../Components/ProjectList'
 import { HomeContainer } from './HomeElements'
 import { ProjectData } from './Data'
 import Footer from '../../Components/Footer'
+import BannerSection from '../../Components/BannerSection'
+import {bannerData1, bannerData2} from './BannerData'
 
 const Home = () => {
 
@@ -38,7 +40,9 @@ const Home = () => {
             exit='exit'
         >
             <HeroSection/>
+            <BannerSection data={bannerData1}/>
             <ProjectList data={ProjectData}/>
+            <BannerSection data={bannerData2}/>
             <Footer/>
         </HomeContainer>
     )

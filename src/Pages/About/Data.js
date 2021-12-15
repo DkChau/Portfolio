@@ -5,8 +5,8 @@ export const DataOne = {
             when an unknown printer took a galley of type and scrambled it to make a type 
             specimen book.`,
     headerStart:true,
-    bgColor:'#f5f5f5',
-    txtColor:'#000000',
+    bgColor:'black',
+    txtColor:'white',
 }
 export const DataTwo = {
     header:'Why Web Design',
@@ -15,6 +15,6 @@ export const DataTwo = {
             when an unknown printer took a galley of type and scrambled it to make a type 
             specimen book.`,
     headerStart:false,
-    bgColor:'#425e5e',
-    txtColor:'#f5f5f5',
+    bgColor:'black',
+    txtColor:'white',
 }

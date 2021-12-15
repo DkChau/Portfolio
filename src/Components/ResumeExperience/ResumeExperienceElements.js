@@ -11,7 +11,7 @@ export const ExperienceContainer = styled.div`
 `
 export const ExperienceWrapper = styled.div`
     display:grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 1fr;
     width:70%;
     align-items: start;
