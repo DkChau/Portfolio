@@ -1,4 +1,4 @@
-import Blog from '../../Images/ProjectImages/Blog.png'
+import BlogSite from '../../Images/ProjectImages/BlogSite.png'
 
 export const projectData = {
     blog:{
@@ -14,7 +14,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     blogapi:{
         name:'Blog API',
@@ -29,7 +29,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     blogcontroller:{
         name:'Blog Controller',
@@ -44,7 +44,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     modernresponsive:{
         name:'Modern Responsive Website',
@@ -59,7 +59,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     membersforum:{
         name:'Members Forum',
@@ -74,7 +74,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     reduxshopping:{
         name:'Redux Amiibo Shopping',
@@ -89,7 +89,7 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
     reduxbattleship:{
         name:'Redux Battleship',
@@ -104,6 +104,6 @@ export const projectData = {
         ],
         appSite:'#',
         codeSite:'#',
-        imgSrc:Blog,
+        imgSrc:BlogSite,
     },
 }

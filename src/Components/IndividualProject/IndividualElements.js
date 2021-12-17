@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 export const IndividualContainer = styled(motion.div)`
     width:100%;
-    max-width:92rem;
+    max-width:85rem;
     margin:0 auto;
     padding:5rem 0 6rem 0;
 `
@@ -18,16 +18,16 @@ export const IndividualWrapper = styled.div`
 `
 export const ImageWrapper = styled.div`
     display:flex;
-    width:550px;
-    height:22rem;
+    width:500px;
+    height:325px;
     grid-area:image;
     overflow:hidden;
     justify-content: center;
 
 `
 export const ProjectImage = styled(motion.img)`
-    width:400px;
-    height:400px;
+    width:100%;
+    height:100%;
 `
 export const ContentWrapper = styled(motion.div)`
     height:100%;
@@ -39,11 +39,12 @@ export const ContentWrapper = styled(motion.div)`
 export const ContentText = styled.div`
     display:grid;
     width:90%;
-    height:100%;
+    /* height:100%; */
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto;
     grid-area:text;
-    padding-left:75px;
+    /* padding-left:75px; */
+    padding-left:${(props)=> props.imgFirst ? '100px' : '0'};
 `
 export const Title = styled(motion.div)`
     font-size:2.4rem;

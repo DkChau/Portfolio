@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
     color:${props=>props.txtColor};
 `
 export const AboutWrapper = styled.div`
-    width:80%;
+    width:90%;
     height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -24,8 +24,9 @@ export const TextWrapper = styled.div`
     justify-content: center;
     align-items:center;
     height:100%;
+    width:90%;
     grid-area:text;
-    max-width:37.5rem;
+    /* max-width:37.5rem; */
     margin:0 auto;
     overflow: hidden;
 `

@@ -95,7 +95,7 @@ const IndividualProject = (props) => {
                     src={props.data.image}></ProjectImage>
                 </ImageWrapper>
                 <ContentWrapper imgFirst={props.data.imgFirst}>
-                    <ContentText>
+                    <ContentText imgFirst={props.data.imgFirst}>
                         <AnimationWrapper>
                             <HeadingWrapper
                                 animate={animation}

@@ -9,6 +9,7 @@ export const InfoWrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding:10rem 0 0 0;
+    background:white;
 `
 export const InfoHeading = styled(motion.div)`
     font-size:2.5rem;

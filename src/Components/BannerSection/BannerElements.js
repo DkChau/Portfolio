@@ -9,6 +9,7 @@ export const BannerContainer = styled.div`
     display:flex;
     /* justify-content: center; */
     align-items:center; 
+    background:white;
 `
 export const BannerWrapper = styled.div`
     width:80%;

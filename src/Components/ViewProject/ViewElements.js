@@ -18,10 +18,10 @@ export const ViewImageWrapper = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
+
 `
 export const ViewImage = styled(motion.img)`
     height:100%;
-    width:auto;
 `
 export const BottomRow = styled(motion.div)`
     height:100%;
