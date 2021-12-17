@@ -67,7 +67,7 @@ const AboutHeroSection = () => {
                     variants={textVariant}
                   >About Me</AboutText>
                 </AnimationWrapper>
-                <AboutSubText variants={subtextVariant}>a story of my life</AboutSubText>
+                <AboutSubText variants={subtextVariant}>learn more about me</AboutSubText>
               </AboutWrapper>
           </AboutContainer>
       </React.Fragment>

@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 export const IndividualContainer = styled(motion.div)`
     width:100%;
-    max-width:87.5rem;
+    max-width:92rem;
     margin:0 auto;
     padding:5rem 0 6rem 0;
 `
@@ -12,38 +12,38 @@ export const IndividualWrapper = styled.div`
     width:100%;
     margin:0 auto;
     display:grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns:${(props)=> props.imgFirst ? 'auto 1fr' : '1fr auto'};
     grid-template-rows: 1fr;
     grid-template-areas: ${(props)=> props.imgFirst ? `'image text'` : `'text image'`};
 `
-export const ImageWrapper = styled(motion.div)`
+export const ImageWrapper = styled.div`
     display:flex;
-    width:31.25rem;
-    height:100%;
-    overflow:hidden;
-    align-items: center;
+    width:550px;
+    height:22rem;
     grid-area:image;
-`
-export const ProjectImage = styled.img`
-    height:25rem;
+    overflow:hidden;
+    justify-content: center;
 
 `
+export const ProjectImage = styled(motion.img)`
+    width:400px;
+    height:400px;
+`
 export const ContentWrapper = styled(motion.div)`
-    width:100%;
     height:100%;
     display:flex;
-    justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'};
+    /* justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'}; */
     align-items: center;
     
 `
 export const ContentText = styled.div`
     display:grid;
-    width:80%;
-    height:auto;
-    align-items: center;
+    width:90%;
+    height:100%;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-area:text;
+    padding-left:75px;
 `
 export const Title = styled(motion.div)`
     font-size:2.4rem;
@@ -57,10 +57,10 @@ export const SubHead = styled(motion.p)`
     color:black;
     overflow:hidden;
 `
-export const Text = styled(motion.p)`
+export const Text = styled(motion.span)`
     font-size:1.2rem;
     font-family:'lora';
-    height:100%;
+    /* height:100%; */
     padding:20px 0;
     overflow:hidden;
 `
@@ -109,6 +109,8 @@ export const AnimationWrapper = styled.div`
     overflow-y:hidden;
     position:relative;
     justify-self:start;
+    display:flex;
+    align-items:flex-start;
 `
 export const HeadingWrapper = styled(motion.div)`
     height:100%;

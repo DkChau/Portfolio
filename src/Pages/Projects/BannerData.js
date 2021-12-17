@@ -1,5 +1,5 @@
 export const bannerData1 = {
-    text:`Here are some projects that I'm proud of`,
+    text:`The fruits of my labor`,
     link:false,
 }
 

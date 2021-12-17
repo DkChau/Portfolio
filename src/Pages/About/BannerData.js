@@ -1,4 +1,4 @@
 export const bannerData = {
-    text:'Testing',
-    link:true
+    text:'Theres a lot more to see!',
+    link:true,
 }

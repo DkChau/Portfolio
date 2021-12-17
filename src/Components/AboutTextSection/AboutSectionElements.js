@@ -3,7 +3,8 @@ import {motion} from 'framer-motion'
 
 export const AboutContainer = styled.div`
     width:100%;
-    height:50vh;
+    height:auto;
+    padding:3rem 0;
     background:${props=>props.bgColor};
     color:${props=>props.txtColor};
 `
@@ -32,6 +33,7 @@ export const Text = styled(motion.p)`
     font-size:1.3rem;
     font-weight:300;
     font-family:'lora';
+    white-space:pre-line;
 `
 export const HeaderWrapper = styled.div`
     display:flex;

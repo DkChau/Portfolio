@@ -2,21 +2,22 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 export const InfoWrapper = styled.div`
-    height:100vh;
+    height:90vh;
     width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:10rem 0 0 0;
 `
-export const InfoHeading = styled.div`
+export const InfoHeading = styled(motion.div)`
     font-size:2.5rem;
     font-weight:600;
 `
-export const InfoDescription = styled.div`
+export const InfoDescription = styled(motion.div)`
     width:60%;
     margin:0 auto;
-    padding:2rem 0;
+    padding:3rem 0;
     font-size:1.2rem;
     font-family:'lora';
 `
@@ -31,23 +32,28 @@ export const GridWrapper = styled.div`
     width:70%;
     grid-template-columns: 1fr 1fr;
 `
-export const TagContent = styled.div`
+export const TagContent = styled(motion.div)`
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 `
-export const TagHeader = styled.div`
+export const TagHeader = styled(motion.div)`
     font-size:1.4rem;
 `
-export const TagWrapper = styled.div`
-    display:flex;
-
+export const TagWrapper = styled(motion.div)`
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows:1fr;
+    grid-gap:1rem;
+    padding-top:1rem;
 `
-export const SingleTag = styled.div`
-
+export const SingleTag = styled(motion.div)`
+    border:1px solid black;
+    padding:.125rem .5rem;
+    text-align:center;
 `
-export const LinkWrapper = styled.div`
+export const LinkWrapper = styled(motion.div)`
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -69,4 +75,7 @@ export const ProjectLink = styled.a`
         background:black;
         color:white;
     }
+`
+export const AnimationWrapper = styled.div`
+    overflow:hidden;
 `

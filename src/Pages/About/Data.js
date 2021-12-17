@@ -1,19 +1,19 @@
 export const DataOne = {
     header:'About Me',
-    text:   `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book.`,
+    text:   
+    `
+    Hi, I'm Duong Chau, An aspiring web developer from Texas.
+
+    Over the course of the pandemic I found in myself, a passion for coding and design that led me on a year-long journey to learn Javascript and all its nuances.
+    
+    `,
     headerStart:true,
     bgColor:'black',
     txtColor:'white',
 }
 export const DataTwo = {
     header:'Why Web Design',
-    text:   `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book.`,
+    text:   `.`,
     headerStart:false,
     bgColor:'black',
     txtColor:'white',

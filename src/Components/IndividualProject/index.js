@@ -87,12 +87,12 @@ const IndividualProject = (props) => {
     return (
         <IndividualContainer ref={ref} variants={containerVariant}>
             <IndividualWrapper imgFirst={props.data.imgFirst}>
-                <ImageWrapper
-                    animate={animation}
-                    initial='hidden'
-                    variants={projectVariants}
-                >
-                    <ProjectImage src={props.data.image}></ProjectImage>
+                <ImageWrapper>
+                    <ProjectImage
+                        animate={animation}
+                        initial='hidden'
+                        variants={projectVariants}
+                    src={props.data.image}></ProjectImage>
                 </ImageWrapper>
                 <ContentWrapper imgFirst={props.data.imgFirst}>
                     <ContentText>
@@ -121,12 +121,15 @@ const IndividualProject = (props) => {
                             </SubHead>
                         </AnimationWrapper>
                         <AnimationWrapper>
-                            <Text
-                                animate={animation}
-                                initial='hidden'
-                                variants={textVariants}
-                                >{props.data.text}
-                            </Text>
+                            <AnimationWrapper>
+                                <Text
+                                    animate={animation}
+                                    initial='hidden'
+                                    variants={textVariants}
+                                    >{props.data.text}
+                                </Text>
+                            </AnimationWrapper>
+
                         </AnimationWrapper>
                         <AnimationWrapper>
                             <ButtonWrapper

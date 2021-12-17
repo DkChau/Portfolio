@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom';
 export const BannerContainer = styled.div`
     width:100%;
     /* border:1px solid black; */
-    min-height:20rem;
+    min-height:25rem;
     display:flex;
-    justify-content: center;
-    align-items:center;
+    /* justify-content: center; */
+    align-items:center; 
 `
 export const BannerWrapper = styled.div`
     width:80%;
