@@ -13,8 +13,8 @@ export const DataOne = {
      I believe I already have what it takes to become a web developer, but I also realize that there is still so much to learn. 
     `,
     headerStart:true,
-    bgColor:'black',
-    txtColor:'white',
+    bgColor:'#FBFAF5',
+    txtColor:'black',
 }
 export const DataTwo = {
     header:'Why Web Design',
@@ -27,6 +27,6 @@ export const DataTwo = {
     So during the course of the pandemic I went searching for an occupation that involved not only the design/analysis aspects of mechanical engineering I loved, but also, an occupation where I truly was able to grasp and apply the concepts. An occupation where I would be able to express my passion for it without having to fake it. And I think I was able to find it with web development. 
     `,
     headerStart:false,
-    bgColor:'black',
-    txtColor:'white',
+    bgColor:'#FBFAF5',
+    txtColor:'black',
 }

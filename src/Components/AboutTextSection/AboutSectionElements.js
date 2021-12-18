@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion'
 
-export const AboutContainer = styled.div`
-    width:100%;
-    height:auto;
-    padding:3rem 0;
-    background:${props=>props.bgColor};
-    color:${props=>props.txtColor};
-`
 export const AboutWrapper = styled.div`
     width:90%;
     height:100%;
@@ -50,4 +43,26 @@ export const Header = styled(motion.p)`
 export const Wrapper = styled.span`
     opacity:1;
     display:flex;
+`
+export const AboutContainer = styled.div`
+    width:100%;
+    height:auto;
+    padding:3rem 0;
+    border-top: 3px solid black;
+    border-bottom:3px solid black;
+    background:${props=>props.bgColor};
+    color:${props=>props.txtColor};
+
+    @media (max-width:992px){
+        ${AboutWrapper}{
+            grid-template-areas: 'header' 'text';
+            grid-template-columns: 1fr;
+        }
+        ${Header}{
+            font-size:1.3rem;
+        }
+        ${Text}{
+            font-size:1rem;
+        }
+    }
 `

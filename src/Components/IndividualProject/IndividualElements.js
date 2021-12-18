@@ -2,14 +2,8 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 
-export const IndividualContainer = styled(motion.div)`
-    width:100%;
-    max-width:85rem;
-    margin:0 auto;
-    padding:5rem 0 6rem 0;
-`
 export const IndividualWrapper = styled.div`
-    width:100%;
+    width:90%;
     margin:0 auto;
     display:grid;
     grid-template-columns:${(props)=> props.imgFirst ? 'auto 1fr' : '1fr auto'};
@@ -22,12 +16,12 @@ export const ImageWrapper = styled.div`
     height:325px;
     grid-area:image;
     overflow:hidden;
-    justify-content: center;
 
 `
 export const ProjectImage = styled(motion.img)`
     width:100%;
     height:100%;
+    
 `
 export const ContentWrapper = styled(motion.div)`
     height:100%;
@@ -38,7 +32,7 @@ export const ContentWrapper = styled(motion.div)`
 `
 export const ContentText = styled.div`
     display:grid;
-    width:90%;
+    width:88%;
     /* height:100%; */
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -49,7 +43,7 @@ export const ContentText = styled.div`
 export const Title = styled(motion.div)`
     font-size:2.4rem;
     font-weight:800;
-    padding:5px 0;
+    padding:.3rem 0;
     color:black;
     overflow-y:hidden;
 `
@@ -62,7 +56,7 @@ export const Text = styled(motion.span)`
     font-size:1.2rem;
     font-family:'lora';
     /* height:100%; */
-    padding:20px 0;
+    padding:1.25rem 0;
     overflow:hidden;
 `
 export const ProjectLink=styled.span`
@@ -130,4 +124,80 @@ export const ButtonWrapper = styled(motion.div)`
     top:0;
     left:0;
     justify-self:start;
+`
+
+export const IndividualContainer = styled(motion.div)`
+    width:100%;
+    max-width:95rem;
+    margin:0 auto;
+    padding:5rem 0 6rem 0;
+    transition:all 0.3s ease-in-out;
+    
+    @media (max-width:1200px){
+        background:pink;
+        ${ImageWrapper}{
+            width:450px;
+            height:293px;
+        }
+    }
+
+    @media (max-width:992px){
+        background:green;
+        ${IndividualWrapper}{
+            grid-template-columns: 1fr;
+            grid-template-areas: 'image' 'text';
+            grid-template-rows: 1fr auto;
+            
+        }
+        ${ImageWrapper}{
+            margin:0 auto;
+            width:100%;
+            height:auto;
+            max-width:550px;
+        }
+        ${ContentText}{
+            padding:0;
+            width:100%;
+            margin:0 auto;
+            max-width:550px;
+        }
+        ${Title}{
+            font-size:2.5rem;
+        }
+        ${SubHead}{
+            font-size:1.1rem;
+        }
+        ${Text}{
+            font-size:1.3rem;
+        }
+    }
+
+    @media (max-width:768px){
+        background:pink;
+        ${Title}{
+            font-size:2.4rem;
+        }
+        ${SubHead}{
+            font-size:1rem;
+        }
+        ${Text}{
+            font-size:1.2rem;
+        }
+
+    }
+
+    @media (max-width:576px){
+        background:yellow;
+        ${Title}{
+            font-size:1.9rem;
+        }
+        ${SubHead}{
+            font-size:0.85rem;
+        }
+        ${Text}{
+            font-size:1rem;
+        }
+    }
+
+
 `

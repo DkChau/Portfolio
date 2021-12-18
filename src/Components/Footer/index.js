@@ -60,7 +60,7 @@ const Footer = () => {
                     <Logo src={Logo3}></Logo>
                 </LogoWrapper>
                 <TextWrapper>
-                    <Text>@ All Rights Reserved 2021</Text>
+                    <Text>This website is open-sourced!</Text>
                 </TextWrapper>
                 <LinkWrapper>
                     <PageLink>

@@ -1,19 +1,12 @@
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
-export const FooterContainer = styled.div`
-    height:70px;
-    width:100%;
-    /* border-top:1px solid white; */
-    background:black;
-    color:white;
-`
 export const FooterWrapper = styled(motion.div)`
     height:100%;
     width:80%;
     margin:0 auto;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr;
     align-items: center;
 `
@@ -39,4 +32,36 @@ export const PageLink = styled.a`
     display:flex;
     align-content:center;
     
+`
+export const FooterContainer = styled.div`
+    height:70px;
+    width:100%;
+    /* border-top:1px solid white; */
+    background:black;
+    color:white;
+    transition:all 0.3s ease-in-out;
+
+    @media (max-width:1200px){
+
+    }
+    @media (max-width:992px){
+        
+    }
+    @media (max-width:768px){
+        
+    }
+    @media (max-width:576px){
+        ${FooterWrapper}{
+            width:90%;
+        }
+        ${Logo}{
+            height:2rem;
+        }
+        ${Text}{
+            font-size:.9rem;
+        }
+        ${PageLink}{
+            font-size:1.5rem;
+        }
+    }
 `

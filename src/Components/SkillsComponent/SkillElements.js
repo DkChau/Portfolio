@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion'
 
-export const SkillContainer = styled.div`
-    width:100%;
-    height:50vh;
-    background:transparent;
-`
 
 export const SkillWrapper =styled.div`
     width:80%;
@@ -56,5 +51,59 @@ export const AnimationWrapper = styled.div`
     width:auto;
     height:auto;
     overflow:hidden;
+
+`
+
+export const SkillContainer = styled.div`
+    width:100%;
+    height:50vh;
+    background:transparent;
+    transition:all 0.3s ease-in-out;
+
+    @media (max-width:1200px){
+        background:pink;
+    }
+    @media (max-width:992px){
+        background:green;
+        ${SkillHeading}{
+            font-size:2.6rem;
+        }
+        ${IconWrapper}{
+            font-size:1.8rem;
+        }
+        ${Skill}{
+            font-size:1.3rem;
+        }
+    }
+    @media (max-width:768px){
+        background:pink;
+        ${SkillHeading}{
+            font-size:2.3rem;
+        }
+        ${IconWrapper}{
+            font-size:1.5rem;
+        }
+        ${Skill}{
+            font-size:1rem;
+        }
+    }
+    @media (max-width:576px){
+        background:green;
+        height:100%;
+
+        ${SkillGrid}{
+            padding:2rem 0;
+            grid-template-columns: auto auto;
+        }
+        ${SkillHeading}{
+
+        }
+        ${IconWrapper}{
+            font-size:1.6rem;
+        }
+        ${Skill}{
+            font-size:1.1rem;
+        }
+    }
 
 `
