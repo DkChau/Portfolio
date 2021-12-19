@@ -60,9 +60,9 @@ const About = () => {
                 <BlackScreen/>
                 <AboutWrapper variants={wrapperVariant}>
                     {/* <CardComponent/> */}
-                    <AboutTextSection data={DataOne}/>               
-                    {/* <ExperienceSection/> */}
-                    <AboutTextSection data={DataTwo}/>
+                    {/* <AboutTextSection data={DataOne}/>                */}
+                    <ExperienceSection/>
+                    {/* <AboutTextSection data={DataTwo}/> */}
                     {/* <SkillsComponent/> Done */}
                     <BannerSection data={bannerData}/>
                 </AboutWrapper>

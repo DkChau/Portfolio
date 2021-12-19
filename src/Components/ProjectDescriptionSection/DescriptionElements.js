@@ -1,16 +1,6 @@
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
-export const InfoWrapper = styled.div`
-    height:90vh;
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:10rem 0 0 0;
-    background:white;
-`
 export const InfoHeading = styled(motion.div)`
     font-size:2.5rem;
     font-weight:600;
@@ -79,4 +69,33 @@ export const ProjectLink = styled.a`
 `
 export const AnimationWrapper = styled.div`
     overflow:hidden;
+`
+export const InfoWrapper = styled.div`
+    height:90vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10rem 0 0 0;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    display:grid;
+    grid-template-areas:    'header header'
+                            'text text'
+                            'tag link'; */
+    background:white;
+
+    @media (max-width:1200px){
+	    background:pink;
+    }
+    @media (max-width:992px){
+        background:green;
+    }
+    @media (max-width:768px){
+        background:pink;
+    }
+    @media (max-width:576px){
+        background:green;
+    }
 `

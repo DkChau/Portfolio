@@ -12,16 +12,15 @@ export const SkillsContainer = styled.div`
 `
 export const SkillsWrapper = styled.div`
     display:grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 1fr;
-    width:70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    width:100%;
     align-items: start;
 
 `   
 export const Header = styled(motion.div)`
     display:flex;
     font-size:2rem;
-    padding:0 3rem;
     font-weight:700;
     justify-self: center;
 `
@@ -53,5 +52,4 @@ export const AnimationWrapper = styled.div`
     width:auto;
     overflow:hidden;
     display:flex;
-    justify-content: center;
 `
