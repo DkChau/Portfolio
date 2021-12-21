@@ -76,7 +76,7 @@ const HeroSection = () => {
 
     return (
       <React.Fragment>
-          <LoadingScreen rectangles={rectangles}/>
+          {/* <LoadingScreen rectangles={rectangles}/> */}
           <HeroContainer>
               <HeroWrapper>
                 <HeroSubText variants={subtextVariant}>Hi I'm,</HeroSubText>

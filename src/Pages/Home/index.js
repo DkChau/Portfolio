@@ -7,9 +7,15 @@ import Footer from '../../Components/Footer'
 import BannerSection from '../../Components/BannerSection'
 import {bannerData1, bannerData2} from './BannerData'
 import BlackScreen from '../../Components/BlackScreen'
+import LoadingScreen from '../../Components/LoadingScreen'
+import { rectangles } from './LoadingData'
+import { AnimatePresence } from 'framer-motion'
+import uniqid from 'uniqid'
 
 const Home = () => {
 
+
+    // console.log('render')
     const transitionVariant = {
         hidden:{
             x:'-100vw',
@@ -40,6 +46,7 @@ const Home = () => {
             animate='show'
             exit='exit'
         >
+            <LoadingScreen rectangles={rectangles}/>
             <HeroSection/>
             <ScreenWrapper>
                 <BlackScreen/>

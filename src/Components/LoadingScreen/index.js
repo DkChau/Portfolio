@@ -1,16 +1,20 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SingleRectangle from '../SingleRectangle'
 import {
     LoadingContainer,
 } from './LoadingElements'
+import useWindowDimensions from '../../Hooks/dimensions'
+import { AnimatePresence } from 'framer-motion'
+import { uniqueId } from 'lodash'
 
 const LoadingScreen = (props) => {
 
-    // const {height, width} = useWindowDimensions();
+    console.log('render')
+    const {height, width} = useWindowDimensions();
     // const [responsive,setResponsive] = useState(false)
 
     // useEffect(()=>{
-    //     console.log(width, responsive)
+    //     console.log(responsive)
     //     if(width>1000){
     //         setResponsive(false)
     //     }
@@ -22,14 +26,20 @@ const LoadingScreen = (props) => {
     const container = {
         hidden:{
             transition: {
-                beforeChildren:true,
                 staggerChildren: 0.05
             }
         },
         show: {
             transition: {
-                // beforeChildren:true,
+                // duration:1,
+                // when:'beforeChildren',
                 staggerChildren: 0.05
+            }
+        },
+        exit: {
+            transition: {
+                // when:'afterChildren',
+                // staggerChildren: 0.05
             }
         },
     }
@@ -41,7 +51,8 @@ const LoadingScreen = (props) => {
         >
             {props.rectangles.map((rectangle,index)=>{
                 return (
-                    <SingleRectangle key={'rectangle' + index} width={rectangle.width} widthResponsive={rectangle.widthResponsive}/>
+                    <SingleRectangle key={'rectangle' + index + (width<1000 ? 'responsive' : '')} width={width < 1000 ? rectangle.widthResponsive : rectangle.width}/>
+                    // <SingleRectangle key={'rectangle' + index } index={index} width={rectangle.width} widthResponsive={rectangle.widthResponsive}/>
                 )
             })}
         </LoadingContainer>

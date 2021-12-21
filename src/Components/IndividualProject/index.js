@@ -110,7 +110,8 @@ const IndividualProject = (props) => {
                             >
                                 {props.data.title}
                             </Title>
-                        </AnimationWrapper>
+                        </AnimationWrapper> 
+                        {/* Move heading outside in small mode */}
                         <AnimationWrapper>
                             <SubHead
                                 animate={animation}
