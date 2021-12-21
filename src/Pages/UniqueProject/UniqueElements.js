@@ -10,7 +10,7 @@ export const UniqueContainer = styled(motion.div)`
     height:100%;
     min-height:100vh;
     overflow-x:hidden;
-    background-image:url(${BlogSite});
+    background-image:url(${props=>props.imgSrc});
     background-size:cover;
     background-position: center; 
     background-repeat: no-repeat;

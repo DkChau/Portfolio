@@ -45,6 +45,7 @@ const UniqueProject = () => {
             initial='hidden'
             animate='show'
             exit='exit'
+            imgSrc={project.imgSrc}
         >
             <ViewProject project={project}/>
             <ScreenWrapper>

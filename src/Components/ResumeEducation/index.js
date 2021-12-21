@@ -10,8 +10,10 @@ import {
         Name,
         Classes,
         DegreeName,
-        Date,
-        AnimationWrapper
+        DegreeDate,
+        AnimationWrapper,
+        SingleClass,
+        DegreeGPA
 } from './ResumeEducationElements'
 import {useAnimation} from 'framer-motion';
 import {useInView} from 'react-intersection-observer';
@@ -62,6 +64,19 @@ const ResumeEducation = (props) => {
 
     },[inView, animation])
 
+    const classes = [
+        'Computer Aided Design',  
+        'Fluid Mechanics', 
+        'Kinematics/Dynamics Mechanical Systems',
+        'Thermodynamics', 
+        'Intermediate Mechanics of Materials', 
+        'Advanced Engineering Math', 
+        'Systems and Controls', 
+        'Heat Transfer', 
+        'Design of Mechanical Systems', 
+        'Computational Design and Analysis'
+    ]
+
     return (
         <EducationContainer >
             <EducationWrapper ref={ref}>
@@ -79,22 +94,18 @@ const ResumeEducation = (props) => {
                 >
                     <University>University of Texas at Dallas</University>
                     <Degree>
-                        <DegreeName>Bachelors of Mechanical Engineering ,  Gpa: 3.90</DegreeName>
-                        <Date>May 2020</Date>
+                        <DegreeName>Bachelors of Mechanical Engineering </DegreeName>
+                        <DegreeGPA>Gpa: 3.90</DegreeGPA>
+                        <DegreeDate>August 2016 - May 2020</DegreeDate>
                     </Degree>
                     <Courses>
                         <Name>Relevant Courses: </Name>
                         <Classes>
-                            Computer Aided Design,  &nbsp;
-                            Fluid Mechanics, &nbsp;
-                            Kinematics/Dynamics Mechanical Systems,
-                            Thermodynamics, &nbsp;
-                            Intermediate Mechanics of Materials, &nbsp;
-                            Advanced Engineering Math, &nbsp;
-                            Systems and Controls, &nbsp;
-                            Heat Transfer, &nbsp;
-                            Design of Mechanical Systems, &nbsp;
-                            Computational Design and Analysis &nbsp;
+                            {classes.map((singleClass,index)=>{
+                                return (
+                                    <SingleClass>{singleClass}</SingleClass>
+                                )
+                            })}
                         </Classes>
                     </Courses>
                 </ContentWrapper>

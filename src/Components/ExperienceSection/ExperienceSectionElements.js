@@ -2,14 +2,13 @@ import styled, {keyframes} from 'styled-components';
 
 export const ExperienceContainer = styled.div`
     height:auto;
-    padding:5% 0;
     width:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
 `
 export const ExperienceWrapper = styled.div`
-    width:60%;
+    width:70%;
     height:100%;
     margin:0 auto;
     display:grid;
@@ -18,19 +17,16 @@ export const ExperienceWrapper = styled.div`
     grid-gap:3.5rem;
 
     @media (max-width:1200px){
-	    background:pink;
-        width:70%;
+        width:75%;
     }
     @media (max-width:992px){
-        background:green;
         width:80%;
     }
     @media (max-width:768px){
-        background:pink;
-        width:90%;
+        width:85%;
     }
     @media (max-width:576px){
-        background:green;
+        width:90%;
     }
 
 `

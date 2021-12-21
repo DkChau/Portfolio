@@ -11,54 +11,63 @@ export const EducationWrapper = styled.div`
 `   
 export const Header = styled(motion.div)`
     display:flex;
-    /* justify-content: flex-start; */
     font-size:2rem;
     font-weight:700; 
+    padding:.875rem 0;
+    text-decoration:underline;
+    text-decoration-thickness:3px;
 `
 export const ContentWrapper = styled(motion.div)`
     display:grid;
     grid-template-columns: 1fr;
     grid-auto-rows:auto;
     padding-top: .5rem;
-    font-size:1.5rem;
     grid-gap: .2rem;
 `
 export const University = styled.div`
+    font-size:1.7rem;
     font-weight:600;
 `
 export const Degree = styled.div`
-    font-size:1.3rem;
     display:grid;
-    grid-template-columns: 1fr auto;
-    font-weight:600;
+    grid-template-columns: auto auto 1fr;
+    font-weight:500;
+    font-size:1.3rem;
 `
 export const DegreeName = styled.div`
+    padding-right:1.25rem;
+`
+export const DegreeGPA = styled.div`
 
 `
-export const Date = styled.div`
-
+export const DegreeDate = styled.div`
+    justify-self:end;
 `
 export const Courses = styled.div`
     display:grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto 1fr;
-    font-weight:300;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows:1fr;
 `
 export const Name = styled.div`
     padding-right:.5rem;
     font-size:1.3rem;
+    font-weight:500;
+    padding-right:1rem;
 `
 export const Classes = styled.div`
     padding-top:.2rem;
-    font-size:1.1rem;
-    word-spacing:normal;
 `
-
+export const SingleClass = styled.div`
+    width:100%;
+    white-space:'nowrap';
+    margin-bottom:.375rem;
+    font-size:1.1rem;
+    font-weight:300;
+`
 export const AnimationWrapper = styled.div`
     width:auto;
     overflow:hidden;
     display:flex;
-    /* justify-content: center; */
 `
 
 export const EducationContainer = styled.div`
@@ -67,18 +76,82 @@ export const EducationContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:opacity 1.5s ease-in-out;
+    transition:all 0.3s ease-in-out;
 
     @media (max-width:1200px){
-	    background:pink;
+        ${Header}{
+            font-size:1.9rem;
+        }
+        ${University}{
+            font-size:1.6rem;
+        }
+        ${Degree}{
+            font-size:1.2rem;
+        }
+        ${Name}{
+            font-size:1.2rem;
+        }
+        ${SingleClass}{
+            font-size:1rem;
+        }
+
     }
     @media (max-width:992px){
-        background:green;
+        ${Header}{
+            font-size:1.8rem;
+        }
+        ${University}{
+            font-size:1.5rem;
+        }
+        ${Degree}{
+            font-size:1.1rem;
+        }
+        ${Name}{
+            font-size:1.1rem;
+        }
+        ${SingleClass}{
+            font-size:.95rem;
+        }
+
     }
     @media (max-width:768px){
-        background:pink;
+        ${Header}{
+            font-size:1.6rem;
+        }
+        ${University}{
+            font-size:1.3rem;
+        }
+        ${Degree}{
+            font-size:.95rem;
+        }
+        ${Name}{
+            font-size:1rem;
+        }
+        ${SingleClass}{
+            font-size:.8rem;
+        }
     }
     @media (max-width:576px){
-        background:green;
+        ${EducationWrapper}{
+            width:auto;
+        }
+        ${Header}{
+            font-size:1.6rem;
+        }
+        ${University}{
+            font-size:1.1rem;
+        }
+        ${Degree}{
+            display:flex;
+            flex-direction:column;
+            font-size:1rem;
+            padding:1rem 0;
+        }
+        ${DegreeGPA}{
+            padding-left:4rem;
+        }
+        ${DegreeDate}{
+            padding-left:4rem;
+        }
     }
 `

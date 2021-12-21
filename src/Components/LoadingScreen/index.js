@@ -51,7 +51,7 @@ const LoadingScreen = (props) => {
         >
             {props.rectangles.map((rectangle,index)=>{
                 return (
-                    <SingleRectangle key={'rectangle' + index + (width<1000 ? 'responsive' : '')} width={width < 1000 ? rectangle.widthResponsive : rectangle.width}/>
+                    <SingleRectangle key={'rectangle' + index + (width<=768 ? 'responsive' : '')} width={width <= 768 ? rectangle.widthResponsive : rectangle.width}/>
                     // <SingleRectangle key={'rectangle' + index } index={index} width={rectangle.width} widthResponsive={rectangle.widthResponsive}/>
                 )
             })}

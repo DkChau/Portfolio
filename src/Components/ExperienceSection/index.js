@@ -12,7 +12,7 @@ const ExperienceSection = (props) => {
         <ExperienceContainer>
             <ExperienceWrapper>
                 <ResumeEducation/>
-                <ResumeExperience/>
+                {/* <ResumeExperience/> */}
                 <ResumeSkills/>
             </ExperienceWrapper>
         </ExperienceContainer>
