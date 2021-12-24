@@ -65,7 +65,7 @@ export const SingleClass = styled.div`
     font-weight:300;
 `
 export const AnimationWrapper = styled.div`
-    width:auto;
+    width:100%;
     overflow:hidden;
     display:flex;
 `
@@ -132,11 +132,18 @@ export const EducationContainer = styled.div`
         }
     }
     @media (max-width:576px){
+        width:90%;
+        background:pink;
+        margin:0 auto;
+        justify-content:flex-start;
         ${EducationWrapper}{
-            width:auto;
+
         }
         ${Header}{
             font-size:1.6rem;
+        }
+        ${AnimationWrapper}{
+            justify-content:center;
         }
         ${University}{
             font-size:1.1rem;

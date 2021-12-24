@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
+export const InfoContainer = styled.div`
+    width:100%;
+    background:white;
+`
 export const InfoHeading = styled(motion.div)`
     font-size:2.5rem;
     font-weight:600;
 `
 export const InfoDescription = styled(motion.div)`
-    width:60%;
+    width:100%;
     margin:0 auto;
     padding:3rem 0;
     font-size:1.2rem;
@@ -20,7 +24,7 @@ export const Feature = styled.li`
 `
 export const GridWrapper = styled.div`
     display:grid;
-    width:70%;
+    width:100%;
     grid-template-columns: 1fr 1fr;
 `
 export const TagContent = styled(motion.div)`
@@ -51,6 +55,9 @@ export const LinkWrapper = styled(motion.div)`
     align-items: center;
 
 `
+export const GridLinkWrapper = styled.div`
+
+`
 export const ProjectLink = styled.a`
     border:1px solid black;
     text-align:center;
@@ -71,31 +78,48 @@ export const AnimationWrapper = styled.div`
     overflow:hidden;
 `
 export const InfoWrapper = styled.div`
-    height:90vh;
-    width:100%;
+    height:auto;
+    width:900px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:10rem 0 0 0;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    display:grid;
-    grid-template-areas:    'header header'
-                            'text text'
-                            'tag link'; */
+    margin:0 auto;
     background:white;
 
     @media (max-width:1200px){
 	    background:pink;
+        ${InfoHeading}{
+
+        }
+        ${InfoDescription}{
+
+        }
+        ${TagHeader}{
+
+        }
+        ${SingleTag}{
+
+        }
     }
     @media (max-width:992px){
         background:green;
+        width:700px;
     }
     @media (max-width:768px){
         background:pink;
+        width:500px;
+        ${TagWrapper}{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        ${GridWrapper}{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
     }
     @media (max-width:576px){
         background:green;
+        width:90%;
     }
 `

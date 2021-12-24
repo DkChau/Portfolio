@@ -12,7 +12,9 @@ import {
     TagContent,
     AnimationWrapper,
     FeatureWrapper,
-    Feature
+    Feature,
+    GridLinkWrapper,
+    InfoContainer,
 } from './DescriptionElements'
 import {useInView} from 'react-intersection-observer'
 import {useAnimation} from 'framer-motion'
@@ -20,7 +22,7 @@ import {useAnimation} from 'framer-motion'
 const ProjectDescriptionSection = (props) => {
 
     const [ref,inView] = useInView({
-        threshold:0.95,
+        threshold:0.8,
         triggerOnce:true
     })
 
@@ -73,45 +75,49 @@ const ProjectDescriptionSection = (props) => {
     },[inView,animation])
 
     return (
-        <InfoWrapper ref={ref}>
-            <AnimationWrapper>
-                <InfoHeading variants={textVariant} animate={animation}>Project Details</InfoHeading>
-            </AnimationWrapper>
-            <AnimationWrapper>
-                <InfoDescription variants={textVariant} animate={animation}>{props.project.description}</InfoDescription>
-            </AnimationWrapper>            
-            {/* <FeatureWrapper>
-                {props.project.features.map((feature,index)=>{
-                    return (
-                        <Feature>{feature}</Feature>
-                    )
-                })}
-
-            </FeatureWrapper> */}
-            <GridWrapper>
-                <TagContent>
-                    <AnimationWrapper>
-                        < TagHeader variants={textVariant} animate={animation}>Tools used to create this project: </TagHeader>
-                    </AnimationWrapper>
-                    <TagWrapper>
-                        {
-                            props.project.tags.map((tag,index)=>{
-                                return (
-                                    <AnimationWrapper>
-                                        <SingleTag variants={textVariant} animate={animation} key={`tag${index}`}>{tag}</SingleTag>
-                                    </AnimationWrapper>                                )
-                            })
-                        }
-                    </TagWrapper>
-                </TagContent>
+        <InfoContainer>
+            <InfoWrapper ref={ref}>
                 <AnimationWrapper>
-                    <LinkWrapper variants={buttonVariant} animate={animation}>
-                        <ProjectLink to='#'>Source Code</ProjectLink>
-                        <ProjectLink to='#'>Visit Project Site</ProjectLink>
-                    </LinkWrapper>
+                    <InfoHeading variants={textVariant} animate={animation}>Project Details</InfoHeading>
                 </AnimationWrapper>
-            </GridWrapper>
-        </InfoWrapper>
+                <AnimationWrapper>
+                    <InfoDescription variants={textVariant} animate={animation}>{props.project.description}</InfoDescription>
+                </AnimationWrapper>            
+                {/* <FeatureWrapper>
+                    {props.project.features.map((feature,index)=>{
+                        return (
+                            <Feature>{feature}</Feature>
+                        )
+                    })}
+
+                </FeatureWrapper> */}
+                <GridWrapper>
+                    <TagContent>
+                        <AnimationWrapper>
+                            < TagHeader variants={textVariant} animate={animation}>Tools used to create this project: </TagHeader>
+                        </AnimationWrapper>
+                        <TagWrapper>
+                            {
+                                props.project.tags.map((tag,index)=>{
+                                    return (
+                                        <AnimationWrapper>
+                                            <SingleTag variants={textVariant} animate={animation} key={`tag${index}`}>{tag}</SingleTag>
+                                        </AnimationWrapper>                                )
+                                })
+                            }
+                        </TagWrapper>
+                    </TagContent>
+                    <GridLinkWrapper>
+                        <AnimationWrapper>
+                            <LinkWrapper variants={buttonVariant} animate={animation}>
+                                <ProjectLink to='#'>Source Code</ProjectLink>
+                                <ProjectLink to='#'>Visit Project Site</ProjectLink>
+                            </LinkWrapper>
+                        </AnimationWrapper>
+                    </GridLinkWrapper>
+                </GridWrapper>
+            </InfoWrapper>
+        </InfoContainer>
     )
 }
 

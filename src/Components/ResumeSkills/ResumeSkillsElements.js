@@ -22,7 +22,6 @@ export const ContentWrapper = styled(motion.div)`
     grid-template-columns: 1fr;
     grid-auto-rows:auto;
     padding-top: .5rem;
-    font-size:1.5rem;
     grid-gap: .2rem;
 `
 export const Row = styled.div`
@@ -30,6 +29,9 @@ export const Row = styled.div`
 `
 export const RowHeader = styled.div`
     font-weight:600;
+    font-size:1.5rem;
+    
+    
 `
 export const List = styled.div`
     display:flex;
@@ -58,23 +60,61 @@ export const SkillsContainer = styled.div`
         ${Header}{
             font-size:1.9rem;
         }
+        ${RowHeader}{
+            font-size:1.4rem;
+        }
+        ${List}{
+            font-size:1.1rem;
+        }
     }
     @media (max-width:992px){
         ${Header}{
             font-size:1.8rem;
+        }
+        ${RowHeader}{
+            font-size:1.4rem;
+        }
+        ${Item}{
+            font-size:1.1rem;
         }
     }
     @media (max-width:768px){
         ${Header}{
             font-size:1.6rem;
         }
+        ${RowHeader}{
+            font-size:1.4rem;
+        }
+        ${Item}{
+            font-size:1.1rem;
+        }
     }
     @media (max-width:576px){
+        width:90%;
+        margin:0 auto;
+        justify-content:flex-start;
         ${SkillsWrapper}{
-            width:auto;
+            
+        }
+        ${AnimationWrapper}{
+            justify-content:center;
         }
         ${Header}{
             font-size:1.6rem;
+        }
+        ${Row}{
+            flex-direction:column;
+        }
+        ${List}{
+            justify-content:flex-start;
+            /* display:flex;
+            flex-direction: column; */
+        }
+        ${RowHeader}{
+            font-size:1.4rem;
+        }
+        ${Item}{
+            font-size:.8rem;
         }
 
     }

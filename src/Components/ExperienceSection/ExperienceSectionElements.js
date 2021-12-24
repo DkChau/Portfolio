@@ -8,7 +8,7 @@ export const ExperienceContainer = styled.div`
     align-items: center;
 `
 export const ExperienceWrapper = styled.div`
-    width:70%;
+    width:700px;
     height:100%;
     margin:0 auto;
     display:grid;
@@ -17,13 +17,13 @@ export const ExperienceWrapper = styled.div`
     grid-gap:3.5rem;
 
     @media (max-width:1200px){
-        width:75%;
+        width:650px;
     }
     @media (max-width:992px){
-        width:80%;
+        width:600px;
     }
     @media (max-width:768px){
-        width:85%;
+        width:500px;
     }
     @media (max-width:576px){
         width:90%;

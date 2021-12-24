@@ -8,7 +8,7 @@ import {
         ProjectName,
         ProjectNote,
         Name,
-        Date,
+        ProjectDate,
         AnimationWrapper
 } from './ResumeExperienceElements'
 import {useAnimation} from 'framer-motion';
@@ -76,7 +76,7 @@ const ResumeExperience = (props) => {
                 >
                     <ProjectName>
                         <Name>Texas Instruments Make Safe System</Name>
-                        <Date>Aug 2019 - May 2020</Date>
+                        <ProjectDate>Aug 2019 - May 2020</ProjectDate>
                     </ProjectName>
                     <ProjectDetails>
                         <ProjectNote>
