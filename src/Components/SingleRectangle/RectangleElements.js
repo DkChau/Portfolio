@@ -3,7 +3,8 @@ import {motion} from 'framer-motion';
 
 export const RectContainer = styled(motion.svg)`
     width:100%;
-    height:100%;
+    height:101%;
+    shape-rendering: crispEdges;
 `
 export const RectWrapper = styled(motion.rect)`
     fill:black;

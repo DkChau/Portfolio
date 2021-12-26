@@ -134,7 +134,6 @@ export const IndividualContainer = styled(motion.div)`
     transition:all 0.3s ease-in-out;
     
     @media (max-width:1200px){
-        background:pink;
         ${ImageWrapper}{
             width:450px;
             height:293px;
@@ -142,7 +141,6 @@ export const IndividualContainer = styled(motion.div)`
     }
 
     @media (max-width:992px){
-        background:green;
         ${IndividualWrapper}{
             grid-template-columns: 1fr;
             grid-template-areas: 'image' 'text';
@@ -153,13 +151,13 @@ export const IndividualContainer = styled(motion.div)`
             margin:0 auto;
             width:100%;
             height:auto;
-            max-width:550px;
+            max-width:500px;
         }
         ${ContentText}{
             padding:0;
             width:100%;
             margin:0 auto;
-            max-width:550px;
+            max-width:500px;
         }
         ${Title}{
             font-size:2.5rem;
@@ -173,7 +171,6 @@ export const IndividualContainer = styled(motion.div)`
     }
 
     @media (max-width:768px){
-        background:pink;
         ${Title}{
             font-size:2.4rem;
         }
@@ -187,7 +184,6 @@ export const IndividualContainer = styled(motion.div)`
     }
 
     @media (max-width:576px){
-        background:yellow;
         ${Title}{
             font-size:1.9rem;
         }

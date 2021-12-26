@@ -60,11 +60,7 @@ export const SkillContainer = styled.div`
     background:transparent;
     transition:all 0.3s ease-in-out;
 
-    @media (max-width:1200px){
-        background:pink;
-    }
     @media (max-width:992px){
-        background:green;
         ${SkillHeading}{
             font-size:2.6rem;
         }
@@ -76,7 +72,6 @@ export const SkillContainer = styled.div`
         }
     }
     @media (max-width:768px){
-        background:pink;
         ${SkillHeading}{
             font-size:2.3rem;
         }
@@ -88,7 +83,6 @@ export const SkillContainer = styled.div`
         }
     }
     @media (max-width:576px){
-        background:green;
         height:100%;
 
         ${SkillGrid}{

@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
 
-export const AboutContainer = styled(motion.div)`
-    background:#ffffff;
-    height:100vh;
-    position:relative;
-    background:transparent;
-`
 export const AboutWrapper = styled(motion.div)`
     display:flex;
     flex-direction: column;
@@ -37,4 +31,41 @@ export const AnimationWrapper = styled(motion.div)`
     background:black;
     padding:0 20px;
     margin:20px 0;
+`
+export const AboutContainer = styled(motion.div)`
+    background:#ffffff;
+    height:100vh;
+    position:relative;
+    background:transparent;
+
+    transition:all 0.3s ease-in-out;
+
+    @media (max-width:1200px){
+        ${AboutText}{
+            font-size:3.2rem;
+        }
+        ${AboutSubText}{
+            font-size:2.1rem;
+        }
+    }
+    @media (max-width:992px){
+        ${AboutText}{
+            font-size:3rem;
+        }
+        ${AboutSubText}{
+            font-size:1.9rem;
+        }
+      
+    }
+    @media (max-width:768px){
+
+    }
+    @media (max-width:576px){
+        ${AboutText}{
+            font-size:2.4rem;
+        }
+        ${AboutSubText}{
+            font-size:1.7rem;
+        }
+    }
 `

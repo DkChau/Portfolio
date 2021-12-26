@@ -22,10 +22,10 @@ const AboutTextSection = (props) => {
 
     const textVariant = {
         hidden:{
-            y:'-150%'
+            x:'-150%'
         },
         show:{
-            y:0,
+            x:0,
             transition:{
                 type:'tween',
                 duration:0.5,

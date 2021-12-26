@@ -2,12 +2,6 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion';
 import {Link} from 'react-router-dom';
 
-export const HeroContainer = styled(motion.div)`
-    background:#ffffff;
-    height:100vh;
-    position:relative;
-    background:transparent;
-`
 export const HeroWrapper = styled(motion.div)`
     display:flex;
     flex-direction: column;
@@ -35,7 +29,6 @@ export const LinkWrapper = styled(motion.div)`
     display:flex;
     justify-content: center;
     align-items:center;
-    font-size:2rem;
     width:100%;
 `
 export const ProjectLink = styled(Link)`
@@ -52,4 +45,57 @@ export const AnimationWrapper = styled(motion.div)`
     background:black;
     padding:0 20px;
     margin:20px 0;
+`
+export const HeroContainer = styled(motion.div)`
+    background:#ffffff;
+    height:100vh;
+    position:relative;
+    background:transparent;
+    z-index:-2; //temp
+    transition:all 0.3s ease-in-out;
+
+    @media (max-width:1200px){
+        ${HeroText}{
+            font-size:3.2rem;
+        }
+        ${HeroSubText}{
+            font-size:2.1rem;
+        }
+        ${ProjectLink}{
+            font-size:1.4rem;
+        } 
+    }
+    @media (max-width:992px){
+        ${HeroText}{
+            font-size:3rem;
+        }
+        ${HeroSubText}{
+            font-size:1.9rem;
+        }
+        ${ProjectLink}{
+            font-size:1.2rem;
+        }       
+    }
+    @media (max-width:768px){
+        /* ${HeroText}{
+            font-size:3rem;
+        }
+        ${HeroSubText}{
+            font-size:2rem;
+        }
+        ${ProjectLink}{
+            font-size:1.5rem;
+        }  */
+    }
+    @media (max-width:576px){
+        ${HeroText}{
+            font-size:2.4rem;
+        }
+        ${HeroSubText}{
+            font-size:1.7rem;
+        }
+        ${ProjectLink}{
+            font-size:1rem;
+        } 
+    }
 `

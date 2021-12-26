@@ -133,7 +133,6 @@ export const EducationContainer = styled.div`
     }
     @media (max-width:576px){
         width:90%;
-        background:pink;
         margin:0 auto;
         justify-content:flex-start;
         ${EducationWrapper}{
