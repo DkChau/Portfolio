@@ -89,7 +89,6 @@ export const InfoWrapper = styled.div`
     background:white;
 
     @media (max-width:1200px){
-	    background:pink;
         ${InfoHeading}{
 
         }
@@ -104,22 +103,57 @@ export const InfoWrapper = styled.div`
         }
     }
     @media (max-width:992px){
-        background:green;
         width:700px;
     }
     @media (max-width:768px){
-        background:pink;
         width:500px;
+        padding:7rem 0 0 0;
         ${TagWrapper}{
             grid-template-columns: 1fr 1fr 1fr;
         }
         ${GridWrapper}{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
+            grid-gap:2rem;
+        }
+        ${InfoHeading}{
+            font-size:1.6rem;
+        }
+        ${InfoDescription}{
+            font-size:1.2rem;
+            text-align:center;
+        }
+        ${TagHeader}{
+            font-size:1.4rem;
+        }
+        ${SingleTag}{
+            font-size:1rem;
+        }
+        ${ProjectLink}{
+            font-size:1rem;
+            width:200px;
         }
     }
     @media (max-width:576px){
-        background:green;
+
         width:90%;
+        padding:7rem 0 0 0;
+        ${InfoHeading}{
+            font-size:1.4rem;
+        }
+        ${InfoDescription}{
+            font-size:1rem;
+            text-align:center;
+        }
+        ${TagHeader}{
+            font-size:1.2rem;
+        }
+        ${SingleTag}{
+            font-size:.85rem;
+        }
+        ${ProjectLink}{
+            font-size:.9rem;
+            width:150px;
+        }
     }
 `

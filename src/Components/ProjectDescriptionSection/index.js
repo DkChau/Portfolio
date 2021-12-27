@@ -11,8 +11,6 @@ import {
     GridWrapper,
     TagContent,
     AnimationWrapper,
-    FeatureWrapper,
-    Feature,
     GridLinkWrapper,
     InfoContainer,
 } from './DescriptionElements'
@@ -22,7 +20,7 @@ import {useAnimation} from 'framer-motion'
 const ProjectDescriptionSection = (props) => {
 
     const [ref,inView] = useInView({
-        threshold:0.8,
+        threshold:0.9,
         triggerOnce:true
     })
 
@@ -69,19 +67,19 @@ const ProjectDescriptionSection = (props) => {
         if(inView){
             animation.start('show')
         }
-        else{
-            animation.start('hidden')
-        }
+        // else{
+        //     animation.start('hidden')
+        // }
     },[inView,animation])
 
     return (
         <InfoContainer>
             <InfoWrapper ref={ref}>
                 <AnimationWrapper>
-                    <InfoHeading variants={textVariant} animate={animation}>Project Details</InfoHeading>
+                    <InfoHeading variants={textVariant} animate={animation} initial='hidden'>Project Details</InfoHeading>
                 </AnimationWrapper>
                 <AnimationWrapper>
-                    <InfoDescription variants={textVariant} animate={animation}>{props.project.description}</InfoDescription>
+                    <InfoDescription variants={textVariant} animate={animation } initial='hidden'>{props.project.description}</InfoDescription>
                 </AnimationWrapper>            
                 {/* <FeatureWrapper>
                     {props.project.features.map((feature,index)=>{
@@ -94,14 +92,14 @@ const ProjectDescriptionSection = (props) => {
                 <GridWrapper>
                     <TagContent>
                         <AnimationWrapper>
-                            < TagHeader variants={textVariant} animate={animation}>Tools used to create this project: </TagHeader>
+                            < TagHeader variants={textVariant} animate={animation} initial='hidden'>Tools used to create this project</TagHeader>
                         </AnimationWrapper>
                         <TagWrapper>
                             {
                                 props.project.tags.map((tag,index)=>{
                                     return (
                                         <AnimationWrapper>
-                                            <SingleTag variants={textVariant} animate={animation} key={`tag${index}`}>{tag}</SingleTag>
+                                            <SingleTag variants={textVariant} animate={animation} initial='hidden' key={`tag${index}`}>{tag}</SingleTag>
                                         </AnimationWrapper>                                )
                                 })
                             }
@@ -109,7 +107,7 @@ const ProjectDescriptionSection = (props) => {
                     </TagContent>
                     <GridLinkWrapper>
                         <AnimationWrapper>
-                            <LinkWrapper variants={buttonVariant} animate={animation}>
+                            <LinkWrapper variants={buttonVariant} animate={animation} initial='hidden'>
                                 <ProjectLink to='#'>Source Code</ProjectLink>
                                 <ProjectLink to='#'>Visit Project Site</ProjectLink>
                             </LinkWrapper>

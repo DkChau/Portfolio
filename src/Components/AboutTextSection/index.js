@@ -83,11 +83,12 @@ const AboutTextSection = (props) => {
                 </TextWrapper>
                 <HeaderWrapper>
                     <Header
-                        initial='hidden'
-                        animate={animation}
-                        variants={textVariant2}
                     >
-                        <Wrapper >
+                        <Wrapper
+                            initial='hidden'
+                            animate={animation}
+                            variants={textVariant2}
+                        >
                             {props.data.header}
                         </Wrapper>
                     </Header>

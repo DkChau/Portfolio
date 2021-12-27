@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion';
 
 export const RectContainer = styled(motion.svg)`
-    width:100%;
+    width:101%;
     height:101%;
     shape-rendering: crispEdges;
 `

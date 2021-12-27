@@ -55,8 +55,8 @@ const ViewProject = (props) => {
             <LoadingScreen rectangles={rectangles}/>
             <ViewContainer>
                 <ViewWrapper>
-                    <ViewImageWrapper >
-                        {/* <ViewImage variants={imgVariant} src={props.project.imgSrc}></ViewImage> */}
+                    <ViewImageWrapper imgSrc={props.project.imgSrc} >
+                        <ViewImage variants={imgVariant} src={props.project.imgSrc}></ViewImage>
                     </ViewImageWrapper>
                     <AnimationWrapper>
                         <BottomRow variants={textVariant}>

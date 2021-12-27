@@ -36,20 +36,18 @@ export const HeaderWrapper = styled.div`
     grid-area:header;
     overflow:hidden;
 `
-export const Header = styled(motion.p)`
+export const Header = styled.p`
     font-size:3.3rem;
     font-weight:600;
+    overflow:hidden;
 `
-export const Wrapper = styled.span`
-    opacity:1;
+export const Wrapper = styled(motion.span)`
     display:flex;
 `
 export const AboutContainer = styled.div`
     width:100%;
     height:auto;
-    padding:3rem 0;
-    border-top: 3px solid black;
-    border-bottom:3px solid black;
+    padding:5rem 0;
     background:${props=>props.bgColor};
     color:${props=>props.txtColor};
 

@@ -56,7 +56,7 @@ export const AnimationWrapper = styled.div`
 
 export const SkillContainer = styled.div`
     width:100%;
-    height:50vh;
+    padding:7rem 0 3rem 0;
     background:transparent;
     transition:all 0.3s ease-in-out;
 

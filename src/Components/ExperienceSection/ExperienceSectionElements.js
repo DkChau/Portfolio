@@ -10,7 +10,7 @@ export const ExperienceContainer = styled.div`
 export const ExperienceWrapper = styled.div`
     width:700px;
     height:100%;
-    margin:0 auto;
+    margin:7rem auto;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
