@@ -19,7 +19,6 @@ export const TextWrapper = styled.div`
     height:100%;
     width:90%;
     grid-area:text;
-    /* max-width:37.5rem; */
     margin:0 auto;
     overflow: hidden;
 `

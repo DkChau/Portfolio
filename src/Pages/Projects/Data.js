@@ -1,4 +1,3 @@
-import Blog from '../../Images/ProjectImages/Blog.png'
 import {
     BlogSmall,
     AmiiboSmall,

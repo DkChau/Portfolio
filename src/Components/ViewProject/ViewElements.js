@@ -31,7 +31,6 @@ export const BottomRow = styled(motion.div)`
     font-weight:700;
     font-size:2rem;
     color:white;
-    /* letter-spacing: 1rem; */
     padding:1rem 0;
 
     @media (max-width:1200px){

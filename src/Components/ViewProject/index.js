@@ -15,11 +15,9 @@ const ViewProject = (props) => {
     const imgVariant = {
         hidden:{
             clipPath: 'inset(0 100% 0 0)'
-            // y:'-100%'
           },
           show:{
               clipPath: 'inset(0 0% 0 0)',
-            // y:0,
             transition:{
                 type:'tween',
                 delay:1.5,
@@ -33,11 +31,9 @@ const ViewProject = (props) => {
 
     const textVariant = {
         hidden:{
-            // clipPath: 'inset(0 100% 0 0)'
             y:'-100%'
           },
           show:{
-            //   clipPath: 'inset(0 0% 0 0)',
             y:0,
             transition:{
                 type:'tween',

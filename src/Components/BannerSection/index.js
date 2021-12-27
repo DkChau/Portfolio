@@ -7,7 +7,6 @@ import {
     BannerText,
     BannerTextWrapper,
     BannerWrapper,
-    LinkHeader
 } from './BannerElements'
 import {useInView} from 'react-intersection-observer'
 import {useAnimation} from 'framer-motion'
@@ -39,9 +38,6 @@ const BannerSection = (props) => {
         if(inView){
             animation.start('show')
         }
-        else{
-            // animation.start('hidden')
-        }
     },[inView, animation])
     return (
         <BannerContainer>
@@ -66,7 +62,6 @@ const BannerSection = (props) => {
                                 animate={animation}
                                 exit='exit'
                             >
-                                {/* <LinkHeader>Quick Links: </LinkHeader> */}
                                 <BannerLink to='/'>
                                     Home
                                 </BannerLink>

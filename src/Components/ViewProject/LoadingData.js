@@ -15,13 +15,5 @@ export const rectangles = (()=>{
             },
         )
     }
-    // testArray.push(
-    //     {
-    //         width:`0%`
-    //     },
-    //     {
-    //         width:`0%`
-    //     },
-    // )
     return testArray;
 })();

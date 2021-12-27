@@ -67,9 +67,6 @@ const ProjectDescriptionSection = (props) => {
         if(inView){
             animation.start('show')
         }
-        // else{
-        //     animation.start('hidden')
-        // }
     },[inView,animation])
 
     return (
@@ -81,14 +78,6 @@ const ProjectDescriptionSection = (props) => {
                 <AnimationWrapper>
                     <InfoDescription variants={textVariant} animate={animation } initial='hidden'>{props.project.description}</InfoDescription>
                 </AnimationWrapper>            
-                {/* <FeatureWrapper>
-                    {props.project.features.map((feature,index)=>{
-                        return (
-                            <Feature>{feature}</Feature>
-                        )
-                    })}
-
-                </FeatureWrapper> */}
                 <GridWrapper>
                     <TagContent>
                         <AnimationWrapper>
@@ -108,8 +97,8 @@ const ProjectDescriptionSection = (props) => {
                     <GridLinkWrapper>
                         <AnimationWrapper>
                             <LinkWrapper variants={buttonVariant} animate={animation} initial='hidden'>
-                                <ProjectLink to='#'>Source Code</ProjectLink>
-                                <ProjectLink to='#'>Visit Project Site</ProjectLink>
+                                <ProjectLink href={props.project.codeSite} target="_blank">Source Code</ProjectLink>
+                                <ProjectLink href={props.project.appSite} target="_blank">Visit Project Site</ProjectLink>
                             </LinkWrapper>
                         </AnimationWrapper>
                     </GridLinkWrapper>

@@ -13,10 +13,9 @@ const DragDown = (props) => {
 
     const dragVariant = {
         hidden:{
-            // x:'-100%'
+
         },
         show:{
-            // x:0,
             transition:{
                 when:'beforeChildren',
                 staggerChildren:0.2,
@@ -38,7 +37,6 @@ const DragDown = (props) => {
         show:{
             x:0,
             transition:{
-                // duration:0.5
                 type:'tween',
                 ease:'easeInOut'
             }
@@ -46,7 +44,6 @@ const DragDown = (props) => {
         exit:{
             x:'-100%',
             transition:{
-                // duration:0.5
                 type:'tween',
                 ease:'easeInOut'
             }

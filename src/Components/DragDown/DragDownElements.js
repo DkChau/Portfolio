@@ -15,7 +15,6 @@ export const IconWrapper = styled(motion.div)`
     width:100%;
     height:100%;
     background:black;
-    /* background:transparent; //test */
     padding:10px 0;
     display:flex;
     justify-content:flex-end;
@@ -53,7 +52,6 @@ export const DragContainer = styled(motion.div)`
     color:white;
     height:100vh;
     width:100%;
-    /* padding-top: 1rem; */
     transition: al 0.3s ease-in-out;
 
     @media (max-width:1200px){

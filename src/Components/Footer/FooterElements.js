@@ -14,7 +14,7 @@ export const LogoWrapper = styled.div`
     display:flex;
     align-content:center;
 `
-export const Logo = styled.img`
+export const LogoIcon = styled.img`
     height:2.5rem;
 `
 export const TextWrapper = styled.div`
@@ -31,12 +31,17 @@ export const PageLink = styled.a`
     font-size:2rem;
     display:flex;
     align-content:center;
+    color:white;
+    transition:all 0.2s ease-in-out;
+
+    &:hover{
+        font-size:2.2rem;
+    }
     
 `
 export const FooterContainer = styled.div`
     height:70px;
     width:100%;
-    /* border-top:1px solid white; */
     background:black;
     color:white;
     transition:all 0.3s ease-in-out;
@@ -54,7 +59,7 @@ export const FooterContainer = styled.div`
         ${FooterWrapper}{
             width:90%;
         }
-        ${Logo}{
+        ${LogoIcon}{
             height:2rem;
         }
         ${Text}{
@@ -62,6 +67,10 @@ export const FooterContainer = styled.div`
         }
         ${PageLink}{
             font-size:1.5rem;
+
+            &:hover{
+                font-size:1.7rem;
+            }
         }
     }
 `

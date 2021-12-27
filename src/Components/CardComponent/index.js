@@ -37,21 +37,21 @@ const CardComponent = () => {
                     </CardHeadingWrapper>
                     <CardMiddleRow>
                         <CardContent>
-                            <CardSection>Name</CardSection>
-                            <CardText>Duong Chau</CardText>
+                            <CardSection>Age</CardSection>
+                            <CardText>23</CardText>
                         </CardContent>
                         <CardContent>
-                            <CardSection>Name</CardSection>
-                            <CardText>Duong Chau</CardText>
+                            <CardSection>Location</CardSection>
+                            <CardText>Houston, TX</CardText>
                         </CardContent>
                     </CardMiddleRow>
                     <CardBottomRow>
                         <CardContent>
-                            <CardSection>Name</CardSection>
+                            <CardSection>Hobbies</CardSection>
                             <CardText>Duong Chau</CardText>
                         </CardContent>
                         <CardContent>
-                            <CardSection>Name</CardSection>
+                            <CardSection>Goals</CardSection>
                             <CardText>Duong Chau</CardText>
                         </CardContent>
                     </CardBottomRow>

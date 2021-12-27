@@ -43,9 +43,6 @@ export const IconWrapper = styled.div`
 export const Skill = styled.div`
     color:black;
     font-size:1.5rem;
-    /* padding:0 .625rem; */
-    /* justify-self:center;
-    align-self:center; */
 `
 export const AnimationWrapper = styled.div`
     width:auto;

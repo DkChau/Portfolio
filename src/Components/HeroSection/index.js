@@ -1,5 +1,4 @@
 import React from 'react'
-import LoadingScreen from '../LoadingScreen'
 import {
     HeroContainer,
     HeroSubText,
@@ -10,7 +9,6 @@ import {
     LinkWrapper
 } from './HeroElements'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
-import { rectangles } from './LoadingData'
 
 const HeroSection = () => {
 
@@ -76,7 +74,6 @@ const HeroSection = () => {
 
     return (
       <React.Fragment>
-          {/* <LoadingScreen rectangles={rectangles}/> */}
           <HeroContainer>
               <HeroWrapper>
                 <HeroSubText variants={subtextVariant}>Hi I'm,</HeroSubText>

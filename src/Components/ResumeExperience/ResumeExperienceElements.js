@@ -47,8 +47,7 @@ export const Name = styled.p`
 
 `
 export const ProjectDate = styled.p`
-    /* font-size:1.2rem; */
-    /* padding-top:.15rem; */
+
 `
 export const AnimationWrapper = styled.div`
     overflow:hidden;

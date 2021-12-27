@@ -16,7 +16,6 @@ export const ImageWrapper = styled.div`
     height:325px;
     grid-area:image;
     overflow:hidden;
-
 `
 export const ProjectImage = styled(motion.img)`
     width:100%;
@@ -26,18 +25,14 @@ export const ProjectImage = styled(motion.img)`
 export const ContentWrapper = styled(motion.div)`
     height:100%;
     display:flex;
-    /* justify-content: ${(props)=> props.imgFirst ? 'flex-end' : 'flex-start'}; */
     align-items: center;
-    
 `
 export const ContentText = styled.div`
     display:grid;
     width:88%;
-    /* height:100%; */
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-area:text;
-    /* padding-left:75px; */
     padding-left:${(props)=> props.imgFirst ? '100px' : '0'};
 `
 export const Title = styled(motion.div)`
@@ -55,7 +50,6 @@ export const SubHead = styled(motion.p)`
 export const Text = styled(motion.span)`
     font-size:1.2rem;
     font-family:'lora';
-    /* height:100%; */
     padding:1.25rem 0;
     overflow:hidden;
 `
@@ -152,6 +146,7 @@ export const IndividualContainer = styled(motion.div)`
             width:100%;
             height:auto;
             max-width:500px;
+            padding:1rem 0;
         }
         ${ContentText}{
             padding:0;
@@ -194,6 +189,4 @@ export const IndividualContainer = styled(motion.div)`
             font-size:1rem;
         }
     }
-
-
 `

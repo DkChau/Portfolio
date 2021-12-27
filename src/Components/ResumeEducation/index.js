@@ -96,7 +96,7 @@ const ResumeEducation = (props) => {
                     <Degree>
                         <DegreeName>Bachelors of Mechanical Engineering </DegreeName>
                         <DegreeGPA>Gpa: 3.90</DegreeGPA>
-                        <DegreeDate>August 2016 - May 2020</DegreeDate>
+                        <DegreeDate>Aug 2016 - May 2020</DegreeDate>
                     </Degree>
                     <Courses>
                         <Name>Relevant Courses: </Name>

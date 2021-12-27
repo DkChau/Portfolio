@@ -17,7 +17,6 @@ export const NavWrapper = styled.div`
     display:flex;
     width:90%;
     margin:1rem auto 0 auto;
-    /* max-width:500px; */
     height:70px;
     align-items: flex-end;
     justify-content: space-between;
@@ -38,4 +37,7 @@ export const IconWrapper = styled.div`
     font-size:3rem;
     color:red;
     display:flex;
+`
+export const HamburgMenu = styled.img`
+
 `

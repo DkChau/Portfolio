@@ -66,6 +66,8 @@ export const ProjectLink = styled.a`
     border-radius:25px;
     padding:7px 3px;
     cursor:pointer;
+    text-decoration:none;
+    color:black;
 
     transition:all 0.3s ease-in-out;
 
@@ -89,18 +91,7 @@ export const InfoWrapper = styled.div`
     background:white;
 
     @media (max-width:1200px){
-        ${InfoHeading}{
 
-        }
-        ${InfoDescription}{
-
-        }
-        ${TagHeader}{
-
-        }
-        ${SingleTag}{
-
-        }
     }
     @media (max-width:992px){
         width:700px;

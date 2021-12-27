@@ -51,7 +51,6 @@ export const HeroContainer = styled(motion.div)`
     height:100vh;
     position:relative;
     background:transparent;
-    z-index:-2; //temp
     transition:all 0.3s ease-in-out;
 
     @media (max-width:1200px){
@@ -77,15 +76,7 @@ export const HeroContainer = styled(motion.div)`
         }       
     }
     @media (max-width:768px){
-        /* ${HeroText}{
-            font-size:3rem;
-        }
-        ${HeroSubText}{
-            font-size:2rem;
-        }
-        ${ProjectLink}{
-            font-size:1.5rem;
-        }  */
+
     }
     @media (max-width:576px){
         ${HeroText}{

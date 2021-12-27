@@ -4,20 +4,15 @@ import {
     NavLogo,
     NavLogoWrapper,
     NavWrapper,
-    IconWrapper
+    IconWrapper,
+    HamburgMenu
 } from './NavBarElements'
-import Logo3 from '../../Images/Logo3.svg'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import Logo from '../../Images/Logo.svg'
+import Hamburg from '../../Images/Hamburg.svg'
 import DragDown from '../DragDown'
 import {AnimatePresence, useCycle} from 'framer-motion'
 
 const NavBar = (props) => {
-
-    // const [toggleDrag , setToggleDrag] = useState(false);
-  
-    // const toggle = () =>{
-    //   setToggleDrag(!toggleDrag)
-    // }
     const [open, cycleOpen] = useCycle(false, true);
 
     const navVariant = {
@@ -52,10 +47,10 @@ const NavBar = (props) => {
             </AnimatePresence>
             <NavWrapper>
                 <NavLogoWrapper to='/'>
-                    <NavLogo src={Logo3}></NavLogo>
+                    <NavLogo src={Logo}></NavLogo>
                 </NavLogoWrapper>
                 <IconWrapper onClick={cycleOpen}>
-                    <GiHamburgerMenu/>
+                    <HamburgMenu src={Hamburg}/>
                 </IconWrapper>
 
             </NavWrapper>

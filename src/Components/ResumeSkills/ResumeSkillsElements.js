@@ -107,8 +107,6 @@ export const SkillsContainer = styled.div`
         }
         ${List}{
             justify-content:flex-start;
-            /* display:flex;
-            flex-direction: column; */
         }
         ${RowHeader}{
             font-size:1.4rem;

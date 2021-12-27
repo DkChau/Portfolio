@@ -3,7 +3,6 @@ import {motion} from 'framer-motion';
 
 export const CardContainer = styled.div`
     width:100%;
-    /* background:pink; // */
     padding:1rem 0;
     height:80vh;
     display:flex;
@@ -25,7 +24,6 @@ export const CardGrid = styled.div`
     width:95%;
     height:90%;
     margin:0 auto;
-    /* border:1px solid black; */
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

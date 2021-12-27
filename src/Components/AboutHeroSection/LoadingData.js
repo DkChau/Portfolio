@@ -36,25 +36,3 @@ export const rectangles = (()=>{
     return testArray;
 })();
 
-// export const rectangles = [
-//     {width:'-30%'},
-//     {width:'30%'},
-//     {width:'-40%'},
-//     {width:'40%'},
-//     {width:'-50%'},
-//     {width:'50%'},
-//     {width:'-60%'},
-//     {width:'60%'},
-//     {width:'-70%'},
-//     {width:'70%'},
-//     {width:'-70%'},
-//     {width:'70%'},
-//     {width:'-60%'},
-//     {width:'60%'},
-//     {width:'-50%'},
-//     {width:'50%'},
-//     {width:'-40%'},
-//     {width:'40%'},
-//     {width:'-30%'},
-//     {width:'30%'},
-// ]

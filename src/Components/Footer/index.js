@@ -5,13 +5,13 @@ import {
     FooterContainer,
     FooterWrapper,
     LinkWrapper,
-    Logo,
+    LogoIcon,
     LogoWrapper,
     Text,
     TextWrapper,
     PageLink
 } from './FooterElements'
-import Logo3 from '../../Images/Logo3.svg'
+import Logo from '../../Images/Logo.svg'
 import {SiGithub} from 'react-icons/si'
 
 const Footer = () => {
@@ -57,13 +57,13 @@ const Footer = () => {
                 exit='exit'
             >
                 <LogoWrapper>
-                    <Logo src={Logo3}></Logo>
+                    <LogoIcon src={Logo}></LogoIcon>
                 </LogoWrapper>
                 <TextWrapper>
                     <Text>This website is open-sourced!</Text>
                 </TextWrapper>
                 <LinkWrapper>
-                    <PageLink>
+                    <PageLink href='https://github.com/novaark/Portfolio' target='_blank'>
                         <SiGithub></SiGithub>
                     </PageLink>
                 </LinkWrapper>

@@ -25,7 +25,6 @@ export const BannerText = styled(motion.div)`
 export const BannerLinkWrapper = styled(motion.div)`
     display:flex;
     font-size:1.3rem;
-    /* justify-content: center; */
     align-items: center;
 `
 export const LinkHeader = styled.div`
@@ -35,13 +34,16 @@ export const BannerLink = styled(Link)`
     text-decoration:none;
     padding:.325rem 1rem;
     color:black;
+
+    &:hover{
+        text-decoration:underline;
+        text-decoration-thickness: 5px;
+    }
 `
 export const BannerContainer = styled.div`
     width:100%;
-    /* border:1px solid black; */
     min-height:25rem;
     display:flex;
-    /* justify-content: center; */
     align-items:center; 
     background:white;
     transition:all 0.3s ease;
