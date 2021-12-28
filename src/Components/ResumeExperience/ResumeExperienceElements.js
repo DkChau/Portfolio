@@ -84,17 +84,6 @@ export const ExperienceContainer = styled.div`
         }
     }
     @media (max-width:768px){
-        ${Header}{
-            font-size:1.6rem;
-        }
-        ${ProjectName}{
-
-        }
-        ${ProjectNote}{
-            
-        }
-    }
-    @media (max-width:576px){
         width:90%;
         margin:0 auto;
         ${Header}{
@@ -109,11 +98,16 @@ export const ExperienceContainer = styled.div`
             grid-template-rows: auto auto;
             grid-gap:.5rem;
         }
-        ${ProjectNote}{
-            font-size:.8rem;
-        }
         ${ProjectDate}{
             padding-left:1rem;
+        }
+    }
+    @media (max-width:576px){
+        ${Header}{
+            font-size:1.6rem;
+        }
+        ${ProjectNote}{
+            font-size:.8rem;
         }
     }
 `

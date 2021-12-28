@@ -20,7 +20,7 @@ export const ExperienceWrapper = styled.div`
         width:50rem;
     }
     @media (max-width:992px){
-        width:46.154rem;
+        width:42rem;
     }
     @media (max-width:768px){
         width:32rem;

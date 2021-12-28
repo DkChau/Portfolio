@@ -6,6 +6,7 @@ import {
     IconWrapper,
     DragWrapper,
     PositionWrapper,
+    CrossWrapper,
 } from './DragDownElements'
 import {ImCross} from 'react-icons/im'
 
@@ -61,7 +62,9 @@ const DragDown = (props) => {
             <DragWrapper> 
                 <IconWrapper variants={sectionVariant}>
                     <PositionWrapper>
-                        <ImCross onClick={props.cycleOpen}></ImCross>
+                        <CrossWrapper>
+                            <ImCross onClick={props.cycleOpen}></ImCross>
+                        </CrossWrapper>
                     </PositionWrapper>
                 </IconWrapper>
 

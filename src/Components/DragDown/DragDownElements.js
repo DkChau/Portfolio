@@ -26,6 +26,12 @@ export const PositionWrapper = styled.div`
     justify-content: flex-end;
     align-items:flex-end;
 `
+export const CrossWrapper = styled.div`
+    display:flex;
+    &:hover{
+        transform:scale(1.1);
+    }
+`
 export const LinkWrapper = styled(motion.div)`
     background:black;
     display:flex;

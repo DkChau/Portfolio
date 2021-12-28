@@ -115,29 +115,9 @@ export const EducationContainer = styled.div`
 
     }
     @media (max-width:768px){
-        ${Header}{
-            font-size:1.6rem;
-        }
-        ${University}{
-            font-size:1.3rem;
-        }
-        ${Degree}{
-            font-size:.95rem;
-        }
-        ${Name}{
-            font-size:1rem;
-        }
-        ${SingleClass}{
-            font-size:.8rem;
-        }
-    }
-    @media (max-width:576px){
         width:90%;
         margin:0 auto;
         justify-content:flex-start;
-        ${EducationWrapper}{
-
-        }
         ${Header}{
             font-size:1.6rem;
         }
@@ -145,19 +125,34 @@ export const EducationContainer = styled.div`
             justify-content:center;
         }
         ${University}{
-            font-size:1.1rem;
+            font-size:1.3rem;
         }
         ${Degree}{
+            font-size:.95rem;
             display:flex;
             flex-direction:column;
             font-size:1rem;
             padding:1rem 0;
+        }
+        ${Name}{
+            font-size:1rem;
+        }
+        ${SingleClass}{
+            font-size:.8rem;
         }
         ${DegreeGPA}{
             padding-left:4rem;
         }
         ${DegreeDate}{
             padding-left:4rem;
+        }
+    }
+    @media (max-width:576px){
+        ${Header}{
+            font-size:1.6rem;
+        }
+        ${University}{
+            font-size:1.1rem;
         }
     }
 `

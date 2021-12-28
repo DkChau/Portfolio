@@ -79,6 +79,9 @@ export const SkillsContainer = styled.div`
         }
     }
     @media (max-width:768px){
+        width:90%;
+        margin:0 auto;
+        justify-content:flex-start;
         ${Header}{
             font-size:1.6rem;
         }
@@ -88,25 +91,19 @@ export const SkillsContainer = styled.div`
         ${Item}{
             font-size:1.1rem;
         }
-    }
-    @media (max-width:576px){
-        width:90%;
-        margin:0 auto;
-        justify-content:flex-start;
-        ${SkillsWrapper}{
-            
-        }
         ${AnimationWrapper}{
             justify-content:center;
-        }
-        ${Header}{
-            font-size:1.6rem;
         }
         ${Row}{
             flex-direction:column;
         }
         ${List}{
             justify-content:flex-start;
+        }
+    }
+    @media (max-width:576px){
+        ${Header}{
+            font-size:1.6rem;
         }
         ${RowHeader}{
             font-size:1.4rem;

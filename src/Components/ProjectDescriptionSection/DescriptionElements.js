@@ -56,7 +56,9 @@ export const LinkWrapper = styled(motion.div)`
 
 `
 export const GridLinkWrapper = styled.div`
-
+    display:flex;
+    justify-content: center;
+    align-items:center;
 `
 export const ProjectLink = styled.a`
     border:1px solid black;
@@ -95,13 +97,16 @@ export const InfoWrapper = styled.div`
     }
     @media (max-width:992px){
         width:700px;
+        ${TagWrapper}{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        ${TagHeader}{
+            font-size:1.2rem;
+        }
     }
     @media (max-width:768px){
         width:500px;
         padding:7rem 0 0 0;
-        ${TagWrapper}{
-            grid-template-columns: 1fr 1fr 1fr;
-        }
         ${GridWrapper}{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;

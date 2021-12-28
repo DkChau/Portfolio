@@ -25,13 +25,20 @@ export const NavLogoWrapper = styled(Link)`
 export const NavLogo = styled.img`
     height:4rem;
     width:auto;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform:scale(1.1) rotate(-10deg);
+    }
 `
 export const IconWrapper = styled.div`
     color:red;
     display:flex;
 `
 export const HamburgMenu = styled.img`
-
+    &:hover{
+        transform:scale(1.1);
+    }
 `
 export const NavContainer = styled(motion.div)`
     width:100%;
@@ -44,7 +51,7 @@ export const NavContainer = styled(motion.div)`
     left:0;
     z-index:1;
 
-    transition: al 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @media (max-width:1200px){
         ${NavLogo}{
