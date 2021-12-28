@@ -52,7 +52,7 @@ export const DragContainer = styled(motion.div)`
     color:white;
     height:100vh;
     width:100%;
-    transition: al 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @media (max-width:1200px){
         ${IconWrapper}{

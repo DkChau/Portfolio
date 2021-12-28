@@ -62,13 +62,13 @@ const BannerSection = (props) => {
                                 animate={animation}
                                 exit='exit'
                             >
-                                <BannerLink to='/'>
+                                <BannerLink className='underline' to='/'>
                                     Home
                                 </BannerLink>
-                                <BannerLink to='/about'>
+                                <BannerLink className='underline' to='/about'>
                                     About 
                                 </BannerLink>
-                                <BannerLink to='/projects'>
+                                <BannerLink className='underline' to='/projects'>
                                     Project
                                 </BannerLink>
                             </BannerLinkWrapper>

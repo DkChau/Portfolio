@@ -52,7 +52,6 @@ const NavBar = (props) => {
                 <IconWrapper onClick={cycleOpen}>
                     <HamburgMenu src={Hamburg}/>
                 </IconWrapper>
-
             </NavWrapper>
         </NavContainer>
     )

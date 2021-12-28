@@ -6,8 +6,12 @@ import {
     HeroWrapper,
     AnimationWrapper,
     ProjectLink,
-    LinkWrapper
+    LinkWrapper,
+    ProjectText,
+    IconWrapper,
+    ArrowWrapper
 } from './HeroElements'
+import {IconContext} from 'react-icons';
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 
 const HeroSection = () => {
@@ -58,10 +62,10 @@ const HeroSection = () => {
     }
     const linkVariant = {
       hidden:{
-        x:'-100%',
+        opacity:0
       },
       show:{
-        x:0,
+        opacity:1,
         transition:{
           delay:2.2,
           duration:0.5
@@ -73,29 +77,35 @@ const HeroSection = () => {
     }
 
     return (
-      <React.Fragment>
-          <HeroContainer>
-              <HeroWrapper>
-                <HeroSubText variants={subtextVariant}>Hi I'm,</HeroSubText>
-                <AnimationWrapper
-                  variants={wrapperVariant}
-                >
-                  <HeroText
-                    variants={textVariant}
-                  >
-                    DUONG CHAU
-                  </HeroText>
-                </AnimationWrapper>
-                <HeroSubText variants={subtextVariant}>An Aspiring Web Designer</HeroSubText>
-                <LinkWrapper  variants={linkVariant}>
-                  <ProjectLink to='/projects'>
-                    View my Projects
-                  </ProjectLink>
-                  <HiOutlineArrowNarrowRight></HiOutlineArrowNarrowRight>
-                </LinkWrapper>
-              </HeroWrapper>
-          </HeroContainer>
-      </React.Fragment>
+        <React.Fragment>
+            <HeroContainer>
+                <HeroWrapper>
+                    <HeroSubText variants={subtextVariant}>Hi I'm,</HeroSubText>
+                    <AnimationWrapper
+                        variants={wrapperVariant}
+                    >
+                        <HeroText variants={textVariant}>
+                        DUONG CHAU
+                        </HeroText>
+                    </AnimationWrapper>
+                    <HeroSubText variants={subtextVariant}>An Aspiring Web Designer</HeroSubText>
+                    <LinkWrapper  variants={linkVariant}>
+                        <ProjectLink to='/projects'>
+                            <ProjectText className='text1'>View My Projects</ProjectText>
+                            <ProjectText className='text2'>View My Projects</ProjectText>
+                        </ProjectLink>
+                        <ArrowWrapper>
+                            <IconWrapper className='arrow1'>
+                                <HiOutlineArrowNarrowRight></HiOutlineArrowNarrowRight>
+                            </IconWrapper>
+                            <IconWrapper className='arrow2'>
+                                <HiOutlineArrowNarrowRight></HiOutlineArrowNarrowRight> 
+                            </IconWrapper>
+                        </ArrowWrapper>
+                    </LinkWrapper>
+                </HeroWrapper>
+            </HeroContainer>
+        </React.Fragment>
     )
 }
 

@@ -6,7 +6,7 @@ export const FooterWrapper = styled(motion.div)`
     width:80%;
     margin:0 auto;
     display:grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 100px 1fr 100px;
     grid-template-rows: 1fr;
     align-items: center;
 `
@@ -58,6 +58,7 @@ export const FooterContainer = styled.div`
     @media (max-width:576px){
         ${FooterWrapper}{
             width:90%;
+            grid-template-columns: 50px 1fr 50px;
         }
         ${LogoIcon}{
             height:2rem;

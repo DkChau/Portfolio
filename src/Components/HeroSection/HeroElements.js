@@ -25,18 +25,67 @@ export const HeroSubText = styled(motion.h2)`
     font-family:'lora';
 
 `
-export const LinkWrapper = styled(motion.div)`
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    width:100%;
+export const ProjectText = styled.span`
+    font-size:1.6rem;
+    transition:all 0.3s ease-in-out;
+
+    &.text2{
+        transform: translateY(3rem) rotate(30deg);
+    }
 `
 export const ProjectLink = styled(Link)`
-    font-size:1.6rem;
     text-decoration:none;
     font-family:'lora';
     color:black;
-    padding:2rem 1rem;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    height:2.1rem;
+
+`
+export const ArrowWrapper = styled.span`
+    width:1.6rem;
+    display:flex;
+    overflow:hidden;
+    margin-left:1rem;
+`
+export const IconWrapper = styled.span`
+    font-size:1.6rem;
+    height:2.1rem;
+    display:flex;
+    align-items:center;
+    transition:all 0.3s ease-in-out;
+
+    &.arrow2{
+        transform:translateX(-200%)
+    }
+`
+export const LinkWrapper = styled(motion.div)`
+    display:grid;
+    grid-template-columns: auto auto;
+    overflow:hidden;
+    margin:2rem 0;
+    height:2.1rem;
+
+    &:hover{
+        ${ProjectText}{
+            &.text1{
+                transform: translateY(-5rem) rotate(30deg);
+            }
+            &.text2{
+                transform: translateY(-2.1rem) rotate(0);
+            }
+        }
+        ${IconWrapper}{
+            &.arrow1{
+                transform:translateX(100%)
+            }
+            &.arrow2{
+                transform:translateX(-100%)
+            }
+        }
+    }
 `
 export const AnimationWrapper = styled(motion.div)`
     height:auto;

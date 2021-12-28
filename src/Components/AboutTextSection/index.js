@@ -22,12 +22,15 @@ const AboutTextSection = (props) => {
 
     const textVariant = {
         hidden:{
-            x:'-150%'
+            x:'-100%'
+            // opacity:0
         },
         show:{
             x:0,
+            // opacity:1,
             transition:{
                 type:'tween',
+                delay:0.6,
                 duration:0.5,
                 ease:'easeInOut'
             }
@@ -39,7 +42,7 @@ const AboutTextSection = (props) => {
 
     const textVariant2 = {
         hidden:{
-            y:'150%'
+            y:'100%'
         },
         show:{
             y:0,
@@ -59,7 +62,7 @@ const AboutTextSection = (props) => {
             animation.start('show')
         }
         else{
-
+            // animation.start('hidden')
         }
     },[inView, animation])
 

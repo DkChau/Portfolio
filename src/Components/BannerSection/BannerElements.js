@@ -32,13 +32,30 @@ export const LinkHeader = styled.div`
 `
 export const BannerLink = styled(Link)`
     text-decoration:none;
-    padding:.325rem 1rem;
+    margin:.325rem 1rem;
     color:black;
 
-    &:hover{
-        text-decoration:underline;
-        text-decoration-thickness: 5px;
+    &.underline{
+        position: relative; 
     }
+
+    &.underline::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: black;
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    &:hover{
+        &.underline::before{
+            width:100%;
+        }
+    }
+
+
 `
 export const BannerContainer = styled.div`
     width:100%;
