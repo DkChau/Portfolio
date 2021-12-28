@@ -72,7 +72,7 @@ export const SkillsContainer = styled.div`
             font-size:1.8rem;
         }
         ${RowHeader}{
-            font-size:1.4rem;
+            font-size:1.3rem;
         }
         ${Item}{
             font-size:1.1rem;
@@ -86,7 +86,7 @@ export const SkillsContainer = styled.div`
             font-size:1.6rem;
         }
         ${RowHeader}{
-            font-size:1.4rem;
+            font-size:1.2rem;
         }
         ${Item}{
             font-size:1.1rem;
@@ -106,7 +106,7 @@ export const SkillsContainer = styled.div`
             font-size:1.6rem;
         }
         ${RowHeader}{
-            font-size:1.4rem;
+            font-size:1.1rem;
         }
         ${Item}{
             font-size:.8rem;

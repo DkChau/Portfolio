@@ -35,7 +35,7 @@ export const PageLink = styled.a`
     transition:all 0.2s ease-in-out;
 
     &:hover{
-        font-size:2.2rem;
+        transform:scale(1.1)
     }
     
 `

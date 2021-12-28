@@ -36,6 +36,7 @@ export const IconWrapper = styled.div`
     display:flex;
 `
 export const HamburgMenu = styled.img`
+    transition: all 0.3s ease-in-out;
     &:hover{
         transform:scale(1.1);
     }

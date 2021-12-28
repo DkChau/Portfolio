@@ -20,7 +20,7 @@ const ViewProject = (props) => {
               clipPath: 'inset(0 0% 0 0)',
             transition:{
                 type:'tween',
-                delay:1.5,
+                delay:1,
                 duration:0.5,
             }
           },
@@ -37,7 +37,7 @@ const ViewProject = (props) => {
             y:0,
             transition:{
                 type:'tween',
-                delay:2.2,
+                delay:1.7,
                 duration:0.5,
             }
           },
