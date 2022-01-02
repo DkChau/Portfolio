@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Footer from '../../Components/Footer'
 import ViewProject from '../../Components/ViewProject'
 import { ScreenWrapper, UniqueContainer, UniqueWrapper } from './UniqueElements'
@@ -11,6 +11,8 @@ import {bannerData} from './BannerData'
 
 const UniqueProject = () => {
 
+    const [loadImage, setLoadImage] = useState(false);
+
     const transitionVariant = {
         hidden:{x:'-100vw'},
         show:{
@@ -20,6 +22,9 @@ const UniqueProject = () => {
                 ease:'easeInOut',
                 when:'beforeChildren',
             }
+        },
+        showLoading:{
+
         },
         exit:{
             x:'100vw',
@@ -35,8 +40,27 @@ const UniqueProject = () => {
     const {id} = useParams();
     const project = projectData[id]
 
+    useEffect(()=> {
+        if(project){
+            let img;
+            const imageLoadPromise = new Promise(resolve => {
+                img = new Image();
+                img.onload = resolve;
+                img.src = project.imgSrc;
+            });
+            
+            imageLoadPromise.then(()=>{
+                console.log("image loaded");
+                setLoadImage(true);
+            })
+        }
+    },[project])
+    
     if(!project){
-        return <div>post not found</div>
+        return <div>Project not found</div>
+    }
+    else if(!loadImage){
+        return <div>loading</div>
     }
 
     return (
@@ -45,7 +69,6 @@ const UniqueProject = () => {
             initial='hidden'
             animate='show'
             exit='exit'
-            imgSrc={project.imgSrc}
         >
             <ViewProject project={project}/>
             <ScreenWrapper>
