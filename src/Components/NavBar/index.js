@@ -19,7 +19,7 @@ const NavBar = (props) => {
         hidden:{y:'-100vh'},
         show:{
             y:0, transition:{
-                delay:1.5,
+                delay:2,
                 type:'tween'
             }
         },

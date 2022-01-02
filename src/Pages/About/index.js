@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import AboutHeroSection from '../../Components/AboutHeroSection'
-import CardComponent from '../../Components/CardComponent'
 import SkillsComponent from '../../Components/SkillsComponent'
 import AboutTextSection from '../../Components/AboutTextSection'
 import {
@@ -59,7 +58,6 @@ const About = () => {
             <ScreenWrapper>
                 <BlackScreen/>
                 <AboutWrapper variants={wrapperVariant}>
-                    {/* <CardComponent/> */}
                     <AboutTextSection data={DataOne}/>               
                     <ExperienceSection/>
                     <AboutTextSection data={DataTwo}/>

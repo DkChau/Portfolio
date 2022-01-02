@@ -6,14 +6,13 @@ export const AboutContainer = styled(motion.div)`
     top:0;
     left:0;
     width:100%;
-    min-height:100%;
-    height:auto;
+    height:100%;
+    min-height:100vh;
     overflow-x:hidden;
 `
 export const AboutWrapper = styled(motion.div)`
     height:100%;
 `
 export const ScreenWrapper = styled.div`
-    height:100%;
     position:relative;
 `

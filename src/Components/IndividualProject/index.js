@@ -99,7 +99,7 @@ const IndividualProject = (props) => {
                             animate={animation}
                             initial='hidden'
                             variants={projectVariants}
-                        src={props.data.image}></ProjectImage>
+                            src={props.data.image}></ProjectImage>
                     </AnimationWrapper>
                 </ImageWrapper>
                 <ContentWrapper imgFirst={props.data.imgFirst}>

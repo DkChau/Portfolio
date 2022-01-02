@@ -30,7 +30,6 @@ const SingleRectangle = (props) => {
 
     return (
         <RectContainer
-            viewBox='0 0 100% 100%'
             variants={listItem}
         >
             <RectWrapper

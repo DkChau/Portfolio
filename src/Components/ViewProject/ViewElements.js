@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 
 export const ViewContainer = styled.div`
     width:100%;
+    position: relative;
 `
 export const ViewWrapper = styled.div`
     width:100%;

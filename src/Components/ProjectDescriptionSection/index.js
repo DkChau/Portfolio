@@ -87,7 +87,7 @@ const ProjectDescriptionSection = (props) => {
                             {
                                 props.project.tags.map((tag,index)=>{
                                     return (
-                                        <AnimationWrapper>
+                                        <AnimationWrapper key={`tag${index}`}>
                                             <SingleTag variants={textVariant} animate={animation} initial='hidden' key={`tag${index}`}>{tag}</SingleTag>
                                         </AnimationWrapper>                                )
                                 })

@@ -5,7 +5,7 @@ export const LoadingContainer = styled(motion.div)`
     display:grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    height:100vh;
+    height:100%;
     background:transparent;
     position:absolute;
     top:0;

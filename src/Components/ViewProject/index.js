@@ -15,12 +15,14 @@ const ViewProject = (props) => {
     const imgVariant = {
         hidden:{
             clipPath: 'inset(0 100% 0 0)'
+            // opacity:0
           },
           show:{
               clipPath: 'inset(0 0% 0 0)',
+            // opacity:1,
             transition:{
                 type:'tween',
-                delay:1,
+                delay:1.2,
                 duration:0.5,
             }
           },
@@ -48,8 +50,8 @@ const ViewProject = (props) => {
 
     return (
         <React.Fragment>
-            <LoadingScreen rectangles={rectangles}/>
             <ViewContainer>
+                <LoadingScreen rectangles={rectangles}/>
                 <ViewWrapper>
                     <ViewImageWrapper>
                         <ViewImage variants={imgVariant} src={props.project.imgSrc}></ViewImage>
