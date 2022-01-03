@@ -50,8 +50,9 @@ const UniqueProject = () => {
             });
             
             imageLoadPromise.then(()=>{
-                console.log("image loaded");
-                setLoadImage(true);
+                setTimeout(()=>{
+                    setLoadImage(true);
+                },1000)
             })
         }
     },[project])

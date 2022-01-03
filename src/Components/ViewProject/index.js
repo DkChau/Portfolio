@@ -22,8 +22,8 @@ const ViewProject = (props) => {
             // opacity:1,
             transition:{
                 type:'tween',
-                delay:1.2,
-                duration:0.5,
+                delay:1.4,
+                duration:0.4,
             }
           },
           exit:{
@@ -40,7 +40,7 @@ const ViewProject = (props) => {
             transition:{
                 type:'tween',
                 delay:1.7,
-                duration:0.5,
+                duration:0.4,
             }
           },
           exit:{

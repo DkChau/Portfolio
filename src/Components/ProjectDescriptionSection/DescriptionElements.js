@@ -15,6 +15,7 @@ export const InfoDescription = styled(motion.div)`
     padding:3rem 0;
     font-size:1.2rem;
     font-family:'lora';
+    white-space:pre-line;
 `
 export const FeatureWrapper = styled.ul`
 

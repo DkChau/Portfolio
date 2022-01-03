@@ -8,7 +8,7 @@ import {
 export const ProjectData = [
     {
         title:'Blog',
-        text:`A Blog built with React that utilizes my REST API.`,
+        text:`A Blog built with React that utilizes my personal REST API.`,
         image:BlogSmall,
         linkTo:'/projects/blog',
         subHead:'Full Stack Project',
@@ -17,7 +17,7 @@ export const ProjectData = [
     },
     {
         title:'Blog API',
-        text:`A REST API built using express and JWT Tokens for authentication`,
+        text:`A REST API built using Express, MongoDB, and JWT Tokens for authentication`,
         image:BlogSmall,
         linkTo:'/projects/blogapi',
         subHead:'Full Stack Project',
@@ -25,7 +25,7 @@ export const ProjectData = [
     },
     {
         title:'Redux Shopping',
-        text:`A React-Redux application that utilizes the Amiibo REST API to create a pseudo-shopping website`,
+        text:`A React-Redux application that utilizes a REST API to create a pseudo-shopping website and display data`,
         image:AmiiboSmall,
         linkTo:'/projects/reduxshopping',
         subHead:'Front-End Project',
@@ -33,7 +33,7 @@ export const ProjectData = [
     },
     {
         title:'Members Forum',
-        text:`An express application that utilizes passport and MongoDB to create/authenticate users and allow them to post messages.`,
+        text:`An Express application that utilizes Passport and MongoDB to create/authenticate users and allow them to post messages.`,
         image:MembersSmall,
         linkTo:'/projects/membersforum',
         subHead:'Full Stack Project',

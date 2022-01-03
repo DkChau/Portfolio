@@ -69,7 +69,7 @@ const BannerSection = (props) => {
                                     About 
                                 </BannerLink>
                                 <BannerLink className='underline' to='/projects'>
-                                    Project
+                                    Projects
                                 </BannerLink>
                             </BannerLinkWrapper>
                         )
