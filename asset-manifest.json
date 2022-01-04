@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.4239105e.chunk.css",
-    "main.js": "./static/js/main.afe0c676.chunk.js",
-    "main.js.map": "./static/js/main.afe0c676.chunk.js.map",
+    "main.js": "./static/js/main.cd24eaab.chunk.js",
+    "main.js.map": "./static/js/main.cd24eaab.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.f76e70a3.js",
     "runtime-main.js.map": "./static/js/runtime-main.f76e70a3.js.map",
-    "static/js/2.8b03f137.chunk.js": "./static/js/2.8b03f137.chunk.js",
-    "static/js/2.8b03f137.chunk.js.map": "./static/js/2.8b03f137.chunk.js.map",
+    "static/js/2.a58a501a.chunk.js": "./static/js/2.a58a501a.chunk.js",
+    "static/js/2.a58a501a.chunk.js.map": "./static/js/2.a58a501a.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.4239105e.chunk.css.map": "./static/css/main.4239105e.chunk.css.map",
-    "static/js/2.8b03f137.chunk.js.LICENSE.txt": "./static/js/2.8b03f137.chunk.js.LICENSE.txt",
+    "static/js/2.a58a501a.chunk.js.LICENSE.txt": "./static/js/2.a58a501a.chunk.js.LICENSE.txt",
     "static/media/AmiiboHome.8656ade3.png": "./static/media/AmiiboHome.8656ade3.png",
     "static/media/AmiiboSmall.d71e9822.png": "./static/media/AmiiboSmall.d71e9822.png",
     "static/media/BattleshipHome.1f0d1b3a.png": "./static/media/BattleshipHome.1f0d1b3a.png",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f76e70a3.js",
-    "static/js/2.8b03f137.chunk.js",
+    "static/js/2.a58a501a.chunk.js",
     "static/css/main.4239105e.chunk.css",
-    "static/js/main.afe0c676.chunk.js"
+    "static/js/main.cd24eaab.chunk.js"
   ]
 }
