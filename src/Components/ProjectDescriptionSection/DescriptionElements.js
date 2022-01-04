@@ -10,18 +10,12 @@ export const InfoHeading = styled(motion.div)`
     font-weight:600;
 `
 export const InfoDescription = styled(motion.div)`
-    width:100%;
+    width:90%;
     margin:0 auto;
     padding:3rem 0;
     font-size:1.2rem;
     font-family:'lora';
     white-space:pre-line;
-`
-export const FeatureWrapper = styled.ul`
-
-`
-export const Feature = styled.li`
-
 `
 export const GridWrapper = styled.div`
     display:grid;

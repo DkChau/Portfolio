@@ -35,6 +35,12 @@ const Home = () => {
         }
     }
 
+    const wrapperVariant = {
+        exit:{
+            opacity:0,
+        }
+    }
+
     return (
         <HomeContainer
             variants={transitionVariant}
@@ -46,7 +52,7 @@ const Home = () => {
             <HeroSection/>
             <ScreenWrapper>
                 <BlackScreen/>
-                <HomeWrapper>
+                <HomeWrapper variants={wrapperVariant}>
                     <BannerSection data={bannerData1}/>
                     <ProjectList data={ProjectData}/>
                     <BannerSection data={bannerData2}/>

@@ -109,9 +109,6 @@ export const HeroContainer = styled(motion.div)`
         ${HeroSubText}{
             font-size:2.1rem;
         }
-        ${ProjectLink}{
-            font-size:1.4rem;
-        } 
     }
     @media (max-width:992px){
         ${HeroText}{
@@ -119,23 +116,52 @@ export const HeroContainer = styled(motion.div)`
         }
         ${HeroSubText}{
             font-size:1.9rem;
-        }
-        ${ProjectLink}{
-            font-size:1.2rem;
-        }       
+        }     
     }
     @media (max-width:768px){
 
     }
     @media (max-width:576px){
         ${HeroText}{
-            font-size:2.4rem;
+            font-size:2.3rem;
         }
         ${HeroSubText}{
-            font-size:1.7rem;
+            font-size:1.6rem;
         }
-        ${ProjectLink}{
-            font-size:1rem;
-        } 
+        ${LinkWrapper}{
+            height:1.8rem;
+            &:hover{
+                ${ProjectText}{
+                    &.text1{
+                        transform: translateY(-3.9rem) rotate(30deg);
+                    }
+                    &.text2{
+                        transform: translateY(-1.8rem) rotate(0);
+                    }
+                }
+                ${IconWrapper}{
+                    &.arrow1{
+                        transform:translateX(100%)
+                    }
+                    &.arrow2{
+                        transform:translateX(-100%)
+                    }
+                }
+    }
+        }
+        ${ProjectText}{
+            font-size:1.3rem;
+
+            &.text2{
+                transform: translateY(2.5rem) rotate(30deg);
+            }
+        }
+        ${ArrowWrapper}{
+            width:1.3rem;
+        }
+        ${IconWrapper}{
+            height:1.8rem;
+            font-size:1.3rem;
+        }
     }
 `

@@ -26,6 +26,24 @@ const ProjectDescriptionSection = (props) => {
 
     const animation = useAnimation();
 
+    const headingVariant = {
+        hidden:{
+            y:'100%',
+            transition:{
+                duration:.5
+            }
+        },
+        show:{
+            y:0,
+            transition:{
+                duration:.3
+            }
+        },
+        exit:{
+            opacity:0
+        }
+    }
+
     const textVariant = {
         hidden:{
             y:'100%',
@@ -36,7 +54,27 @@ const ProjectDescriptionSection = (props) => {
         show:{
             y:0,
             transition:{
+                delay:0.3,
+                duration:.3
+            }
+        },
+        exit:{
+            opacity:0
+        }
+    }
+
+    const tagVariant = {
+        hidden:{
+            y:'100%',
+            transition:{
                 duration:.5
+            }
+        },
+        show:{
+            y:0,
+            transition:{
+                delay:0.6,
+                duration:.3
             }
         },
         exit:{
@@ -54,8 +92,8 @@ const ProjectDescriptionSection = (props) => {
         show:{
             x:0,
             transition:{
-                delay:0.5,
-                duration:.7
+                delay:0.9,
+                duration:.3
             }
         },
         exit:{
@@ -73,7 +111,7 @@ const ProjectDescriptionSection = (props) => {
         <InfoContainer>
             <InfoWrapper ref={ref}>
                 <AnimationWrapper>
-                    <InfoHeading variants={textVariant} animate={animation} initial='hidden'>Project Details</InfoHeading>
+                    <InfoHeading variants={headingVariant} animate={animation} initial='hidden'>Project Details</InfoHeading>
                 </AnimationWrapper>
                 <AnimationWrapper>
                     <InfoDescription variants={textVariant} animate={animation } initial='hidden'>{props.project.description}</InfoDescription>
@@ -81,14 +119,14 @@ const ProjectDescriptionSection = (props) => {
                 <GridWrapper>
                     <TagContent>
                         <AnimationWrapper>
-                            < TagHeader variants={textVariant} animate={animation} initial='hidden'>Tools used to create this project</TagHeader>
+                            < TagHeader variants={tagVariant} animate={animation} initial='hidden'>Tools used to create this project</TagHeader>
                         </AnimationWrapper>
                         <TagWrapper>
                             {
                                 props.project.tags.map((tag,index)=>{
                                     return (
                                         <AnimationWrapper key={`tag${index}`}>
-                                            <SingleTag variants={textVariant} animate={animation} initial='hidden' key={`tag${index}`}>{tag}</SingleTag>
+                                            <SingleTag variants={tagVariant} animate={animation} initial='hidden' key={`tag${index}`}>{tag}</SingleTag>
                                         </AnimationWrapper>                                )
                                 })
                             }

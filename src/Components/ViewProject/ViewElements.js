@@ -33,22 +33,23 @@ export const BottomRow = styled(motion.div)`
     font-size:2rem;
     color:white;
     padding:1rem 0;
+    letter-spacing:8px;
 
     @media (max-width:1200px){
         font-size:1.7rem;
-        letter-spacing: 10px;
+        letter-spacing:7px;
     }
     @media (max-width:992px){
         font-size:1.4rem;
-        letter-spacing: 10px;
+        letter-spacing:6px;
     }
     @media (max-width:768px){
         font-size:1.1rem;
-        letter-spacing: 10px;
+        letter-spacing:5px;
     }
     @media (max-width:576px){
         font-size:1rem;
-        letter-spacing: 5px;
+        letter-spacing:4px;
     }
 `
 export const AnimationWrapper = styled.div`

@@ -31,7 +31,7 @@ const BannerSection = (props) => {
             }
         },
         exit:{
-            opacity:0
+
         },
     }
     useEffect(()=>{

@@ -31,6 +31,12 @@ const Projects = () => {
         }
     }
 
+    const wrapperVariant = {
+        exit:{
+            opacity:0,
+        }
+    }
+
     return (
         <ProjectContainer
             variants={transitionVariant}
@@ -41,7 +47,7 @@ const Projects = () => {
             <ProjectHeroSection/>
             <ScreenWrapper>
                 <BlackScreen/>
-                <ProjectWrapper>
+                <ProjectWrapper variants={wrapperVariant}>
                     <BannerSection data={bannerData1}/>
                     <ProjectList data={ProjectData}/>
                     <BannerSection  data={bannerData2}/>

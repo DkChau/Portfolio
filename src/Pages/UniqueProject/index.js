@@ -8,6 +8,7 @@ import ProjectDescriptionSection from '../../Components/ProjectDescriptionSectio
 import BlackScreen from '../../Components/BlackScreen';
 import BannerSection from '../../Components/BannerSection';
 import {bannerData} from './BannerData'
+import ImageLoad from '../../Components/ImageLoad';
 
 const UniqueProject = () => {
 
@@ -36,6 +37,12 @@ const UniqueProject = () => {
             }
         }
     }
+
+    const wrapperVariant = {
+        exit:{
+            opacity:0,
+        }
+    }
     
     const {id} = useParams();
     const project = projectData[id]
@@ -61,7 +68,7 @@ const UniqueProject = () => {
         return <div>Project not found</div>
     }
     else if(!loadImage){
-        return <div>loading</div>
+        return <ImageLoad/>
     }
 
     return (
@@ -74,7 +81,7 @@ const UniqueProject = () => {
             <ViewProject project={project}/>
             <ScreenWrapper>
                 <BlackScreen/>
-                <UniqueWrapper>
+                <UniqueWrapper variants={wrapperVariant}>
                     <ProjectDescriptionSection project={project}/>
                     <BannerSection data={bannerData}/>
                 </UniqueWrapper>
