@@ -4,6 +4,8 @@ import {
     MembersHome,
     BattleshipHome,
     ModernHome,
+    BlogApiHome,
+    ControllerHome
 } from '../../Images/ProjectImages'
 
 export const projectData = {
@@ -52,7 +54,7 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
         ],
         appSite:'https://dcblogapi.herokuapp.com/api/post',
         codeSite:'https://github.com/novaark/BlogApi',
-        imgSrc:BlogHome,
+        imgSrc:BlogApiHome,
     },
     blogcontroller:{
         name:'Blog Controller',
@@ -76,7 +78,7 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
         ],
         appSite:'https://novaark.github.io/BlogController',
         codeSite:'https://github.com/novaark/BlogController',
-        imgSrc:BlogHome,
+        imgSrc:ControllerHome,
     },
     modernresponsive:{
         name:'Modern Responsive Website',

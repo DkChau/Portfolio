@@ -68,6 +68,7 @@ export const ProjectContainer = styled(motion.div)`
         }
         ${ProjectSubText}{
             font-size:1.7rem;
+            max-width:80%;
         }
     }
 `

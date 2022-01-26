@@ -3,7 +3,9 @@ import {
     AmiiboSmall,
     MembersSmall,
     BattleshipSmall,
-    ModernSmall
+    ModernSmall,
+    BlogApiSmall,
+    ControllerSmall
 } from '../../Images/ProjectImages'
 
 export const ProjectData = [
@@ -19,7 +21,7 @@ export const ProjectData = [
     {
         title:'Blog API',
         text:`A REST API built using Express, MongoDB, and JWT Tokens.`,
-        image:BlogSmall,
+        image:BlogApiSmall,
         linkTo:'/projects/blogapi',
         subHead:'Full Stack Project',
         imgFirst:true
@@ -27,7 +29,7 @@ export const ProjectData = [
     {
         title:'Blog Controller',
         text:`An bare-bones API Controller built using React that allows for authentication with JWT Tokens and modification of Blog posts. `,
-        image:BlogSmall,
+        image:ControllerSmall,
         linkTo:'/projects/blogcontroller',
         subHead:'Full Stack Project',
         imgFirst:false

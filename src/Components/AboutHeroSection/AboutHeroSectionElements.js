@@ -66,6 +66,7 @@ export const AboutContainer = styled(motion.div)`
         }
         ${AboutSubText}{
             font-size:1.7rem;
+            max-width:80%;
         }
     }
 `

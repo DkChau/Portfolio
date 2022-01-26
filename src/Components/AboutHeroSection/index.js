@@ -22,7 +22,7 @@ const AboutHeroSection = () => {
         }
       },
       exit:{
-
+        opacity:0,
       }
     }
 
@@ -67,7 +67,7 @@ const AboutHeroSection = () => {
                     variants={textVariant}
                   >About Me</AboutText>
                 </AnimationWrapper>
-                <AboutSubText variants={subtextVariant}>learn more about me</AboutSubText>
+                <AboutSubText variants={subtextVariant}>Learn more about me</AboutSubText>
               </AboutWrapper>
           </AboutContainer>
       </React.Fragment>

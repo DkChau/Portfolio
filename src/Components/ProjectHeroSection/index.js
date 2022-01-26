@@ -22,7 +22,7 @@ const ProjectHeroSection = () => {
         }
       },
       exit:{
-
+        opacity:0,
       }
     }
 

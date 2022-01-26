@@ -60,7 +60,7 @@ const Footer = () => {
                     <LogoIcon src={Logo}></LogoIcon>
                 </LogoWrapper>
                 <TextWrapper>
-                    <Text>This website is open-sourced!</Text>
+                    <Text>This website is open source!</Text>
                 </TextWrapper>
                 <LinkWrapper>
                     <PageLink href='https://github.com/novaark/Portfolio' target='_blank'>

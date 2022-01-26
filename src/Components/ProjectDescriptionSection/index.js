@@ -54,7 +54,7 @@ const ProjectDescriptionSection = (props) => {
         show:{
             y:0,
             transition:{
-                delay:0.3,
+                delay:0.4,
                 duration:.3
             }
         },
@@ -73,7 +73,7 @@ const ProjectDescriptionSection = (props) => {
         show:{
             y:0,
             transition:{
-                delay:0.6,
+                delay:0.8,
                 duration:.3
             }
         },
@@ -92,7 +92,7 @@ const ProjectDescriptionSection = (props) => {
         show:{
             x:0,
             transition:{
-                delay:0.9,
+                delay:1.2,
                 duration:.3
             }
         },

@@ -1,8 +1,8 @@
-import Blog from '../../Images/ProjectImages/Blog.png'
 import {
     BlogSmall,
     AmiiboSmall,
     MembersSmall,
+    BlogApiSmall,
 } from '../../Images/ProjectImages'
 
 export const ProjectData = [
@@ -18,7 +18,7 @@ export const ProjectData = [
     {
         title:'Blog API',
         text:`A REST API built using Express, MongoDB, and JWT Tokens for authentication`,
-        image:BlogSmall,
+        image:BlogApiSmall,
         linkTo:'/projects/blogapi',
         subHead:'Full Stack Project',
         imgFirst:true

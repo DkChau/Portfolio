@@ -126,7 +126,8 @@ export const HeroContainer = styled(motion.div)`
             font-size:2.3rem;
         }
         ${HeroSubText}{
-            font-size:1.6rem;
+            font-size:1.7rem;
+            max-width:80%;
         }
         ${LinkWrapper}{
             height:1.8rem;

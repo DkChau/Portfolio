@@ -13,6 +13,12 @@ import AmiiboHome from '../../Images/ProjectImages/AmiiboHome.png'
 import MembersSmall from '../../Images/ProjectImages/MembersSmall.png'
 import MembersHome from '../../Images/ProjectImages/MembersHome.png'
 
+import ControllerHome from '../../Images/ProjectImages/ControllerHome.png'
+import ControllerSmall from '../../Images/ProjectImages/ControllerSmall.png'
+
+import BlogApiHome from '../../Images/ProjectImages/BlogApiHome.png'
+import BlogApiSmall from '../../Images/ProjectImages/BlogApiSmall.png'
+
 export {
     BlogSmall,
     BlogHome,
@@ -23,5 +29,9 @@ export {
     AmiiboHome,
     AmiiboSmall,
     BattleshipHome,
-    BattleshipSmall
+    BattleshipSmall,
+    ControllerHome,
+    ControllerSmall,
+    BlogApiSmall,
+    BlogApiHome
 }

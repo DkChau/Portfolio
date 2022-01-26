@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion'
 
 export const AboutWrapper = styled.div`
-    width:90%;
+    width:80%;
     height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -10,6 +10,7 @@ export const AboutWrapper = styled.div`
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    /* grid-gap:10rem; */
     grid-template-areas: ${props=>props.headerStart ? "'header text'" : "'text header'"};
 `
 export const TextWrapper = styled.div`
@@ -17,13 +18,14 @@ export const TextWrapper = styled.div`
     justify-content: center;
     align-items:center;
     height:100%;
-    width:90%;
+    width:100%;
+    max-width:50rem;
     grid-area:text;
     margin:0 auto;
     overflow: hidden;
 `
 export const Text = styled(motion.p)`
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight:300;
     font-family:'lora';
     white-space:pre-line;
@@ -36,9 +38,10 @@ export const HeaderWrapper = styled.div`
     overflow:hidden;
 `
 export const Header = styled.p`
-    font-size:3.3rem;
+    font-size:3rem;
     font-weight:600;
     overflow:hidden;
+    text-align:center;
 `
 export const Wrapper = styled(motion.span)`
     display:flex;
@@ -50,6 +53,21 @@ export const AboutContainer = styled.div`
     background:${props=>props.bgColor};
     color:${props=>props.txtColor};
 
+    @media (max-width:1368px){
+        ${AboutWrapper}{
+            grid-template-areas: 'header' 'text';
+            grid-template-columns: 1fr;
+            grid-gap:0;
+        }
+        ${Header}{
+            font-size:2.4rem;
+        }
+        ${Text}{
+            font-size:1.2rem;
+            max-width:45rem;
+            text-align:center;
+        }
+    }
     @media (max-width:992px){
         ${AboutWrapper}{
             grid-template-areas: 'header' 'text';

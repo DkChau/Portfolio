@@ -30,11 +30,6 @@ const IndividualProject = (props) => {
     });
     const animation = useAnimation();
 
-    const containerVariant = {
-        exit:{
-            opacity:0
-        }
-    }
     const projectVariants = {
         hidden:{
             clipPath: 'inset(0 100% 0 0)'
@@ -85,7 +80,7 @@ const IndividualProject = (props) => {
     },[animation, inView])
 
     return (
-        <IndividualContainer ref={ref} variants={containerVariant}>
+        <IndividualContainer ref={ref}>
             <IndividualWrapper imgFirst={props.data.imgFirst}>
                 <ImageWrapper>
                     <AnimationWrapper>

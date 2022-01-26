@@ -7,8 +7,7 @@ import useWindowDimensions from '../../Hooks/dimensions'
 
 const LoadingScreen = (props) => {
 
-    console.log('render')
-    const {height, width} = useWindowDimensions();
+    const {width} = useWindowDimensions();
 
     const container = {
         hidden:{
@@ -22,8 +21,6 @@ const LoadingScreen = (props) => {
             }
         },
         exit: {
-            transition: {
-            }
         },
     }
     

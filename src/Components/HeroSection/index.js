@@ -11,7 +11,6 @@ import {
     IconWrapper,
     ArrowWrapper
 } from './HeroElements'
-import {IconContext} from 'react-icons';
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 
 const HeroSection = () => {

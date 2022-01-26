@@ -16,6 +16,7 @@ export const BannerContent = styled.div`
 `
 export const BannerTextWrapper = styled.div`
     overflow:hidden;
+    text-align:center;
 `
 export const BannerText = styled(motion.div)`
     font-size:2.8rem;
