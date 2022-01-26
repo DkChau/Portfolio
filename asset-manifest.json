@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.4239105e.chunk.css",
-    "main.js": "./static/js/main.cd24eaab.chunk.js",
-    "main.js.map": "./static/js/main.cd24eaab.chunk.js.map",
+    "main.js": "./static/js/main.8c96697e.chunk.js",
+    "main.js.map": "./static/js/main.8c96697e.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.f76e70a3.js",
     "runtime-main.js.map": "./static/js/runtime-main.f76e70a3.js.map",
     "static/js/2.a58a501a.chunk.js": "./static/js/2.a58a501a.chunk.js",
@@ -14,13 +14,16 @@
     "static/media/AmiiboSmall.d71e9822.png": "./static/media/AmiiboSmall.d71e9822.png",
     "static/media/BattleshipHome.1f0d1b3a.png": "./static/media/BattleshipHome.1f0d1b3a.png",
     "static/media/BattleshipSmall.972d77d8.png": "./static/media/BattleshipSmall.972d77d8.png",
-    "static/media/Blog.b5f39c33.png": "./static/media/Blog.b5f39c33.png",
-    "static/media/BlogHome.5fa0b073.png": "./static/media/BlogHome.5fa0b073.png",
+    "static/media/BlogApiHome.556d65a7.png": "./static/media/BlogApiHome.556d65a7.png",
+    "static/media/BlogApiSmall.055e1a91.png": "./static/media/BlogApiSmall.055e1a91.png",
+    "static/media/BlogHome.5c349efc.png": "./static/media/BlogHome.5c349efc.png",
     "static/media/BlogSmall.9fa4d458.png": "./static/media/BlogSmall.9fa4d458.png",
+    "static/media/ControllerHome.35eed303.png": "./static/media/ControllerHome.35eed303.png",
+    "static/media/ControllerSmall.32e890b8.png": "./static/media/ControllerSmall.32e890b8.png",
     "static/media/Hamburg.72667a2f.svg": "./static/media/Hamburg.72667a2f.svg",
     "static/media/Logo.fd871101.svg": "./static/media/Logo.fd871101.svg",
     "static/media/MembersHome.7b43a68d.png": "./static/media/MembersHome.7b43a68d.png",
-    "static/media/MembersSmall.c5563109.png": "./static/media/MembersSmall.c5563109.png",
+    "static/media/MembersSmall.6c31690e.png": "./static/media/MembersSmall.6c31690e.png",
     "static/media/ModernHome.bbcdbd44.png": "./static/media/ModernHome.bbcdbd44.png",
     "static/media/ModernSmall.d20adec5.png": "./static/media/ModernSmall.d20adec5.png"
   },
@@ -28,6 +31,6 @@
     "static/js/runtime-main.f76e70a3.js",
     "static/js/2.a58a501a.chunk.js",
     "static/css/main.4239105e.chunk.css",
-    "static/js/main.cd24eaab.chunk.js"
+    "static/js/main.8c96697e.chunk.js"
   ]
 }
