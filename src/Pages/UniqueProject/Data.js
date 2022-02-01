@@ -28,8 +28,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'Bcrypt',
             'NodeJS',
         ],
-        appSite:'https://novaark.github.io/Blog',
-        codeSite:'https://github.com/novaark/Blog',
+        appSite:'https://dkchau.github.io/Blog',
+        codeSite:'https://github.com/dkchau/Blog',
         imgSrc:BlogHome,
     },
     blogapi:{
@@ -52,8 +52,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'Bcrypt',
             'NodeJS',
         ],
-        appSite:'https://dcblogapi.herokuapp.com/api/post',
-        codeSite:'https://github.com/novaark/BlogApi',
+        appSite:'https://dkchau.github.io/ApiFrontEnd',
+        codeSite:'https://github.com/dkchau/BlogApi',
         imgSrc:BlogApiHome,
     },
     blogcontroller:{
@@ -76,8 +76,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'Bcrypt',
             'NodeJS',
         ],
-        appSite:'https://novaark.github.io/BlogController',
-        codeSite:'https://github.com/novaark/BlogController',
+        appSite:'https://dkchau.github.io/BlogController',
+        codeSite:'https://github.com/dkchau/BlogController',
         imgSrc:ControllerHome,
     },
     modernresponsive:{
@@ -93,8 +93,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'Javascript',
             'React',
         ],
-        appSite:'https://novaark.github.io/modernWebsite',
-        codeSite:'https://github.com/novaark/modernWebsite',
+        appSite:'https://dkchau.github.io/modernWebsite',
+        codeSite:'https://github.com/dkchau/modernWebsite',
         imgSrc:ModernHome,
     },
     membersforum:{
@@ -118,7 +118,7 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'Jade'
         ],
         appSite:'https://membersforum.herokuapp.com/',
-        codeSite:'https://github.com/novaark/MembersForum',
+        codeSite:'https://github.com/dkchau/MembersForum',
         imgSrc:MembersHome,
     },
     reduxshopping:{
@@ -137,8 +137,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'React',
             'Redux'
         ],
-        appSite:'https://novaark.github.io/reduxShopping',
-        codeSite:'https://github.com/novaark/reduxShopping',
+        appSite:'https://dkchau.github.io/reduxShopping',
+        codeSite:'https://github.com/dkchau/reduxShopping',
         imgSrc:AmiiboHome,
     },
     reduxbattleship:{
@@ -157,8 +157,8 @@ The Blog grabs data from the REST API and displays it accordingly. The site is d
             'React',
             'Redux'
         ],
-        appSite:'https://novaark.github.io/reduxBattleship',
-        codeSite:'https://github.com/novaark/reduxBattleship',
+        appSite:'https://dkchau.github.io/reduxBattleship',
+        codeSite:'https://github.com/dkchau/reduxBattleship',
         imgSrc:BattleshipHome,
     },
 }
