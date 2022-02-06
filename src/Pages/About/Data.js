@@ -10,7 +10,7 @@ export const DataOne = {
     
     I specialize in React for front-end design and Express for server-side apps and am currently in the process of learning Figma in order to implement prototyping into my projects.
     
-     I believe I already have what it takes to become a web developer, but I also realize that there is still so much to learn. 
+    I've learned a lot throughout the year, but Javascript is an ever-growing language and I realize that there is still much more to learn.
     `,
     headerStart:true,
     bgColor:'white',
@@ -22,9 +22,11 @@ export const DataTwo = {
     `
     Towards the end of my college career, I realized that I was not enjoying mechanical engineering as much as I wish I had. 
 
-    The parts of mechanical engineering that I truly loved and excelled at all were subjects relating to design and analysis. Designing and creating simulations with programs such as CREO, Abaqus, and MATLAB were some of my favorite things to do in mechanical engineering, but for the most part, despite performing well academically, the concepts did not come as naturally to me as I wished.
+    The parts of mechanical engineering that I truly loved and excelled at all were subjects relating to design and analysis. Designing and creating simulations with programs such as CREO, Abaqus, and MATLAB were some of my favorite things to do in mechanical engineering, but despite performing well academically, I did not find myself passionate about the career.
 
-    So during the course of the pandemic I went searching for an occupation that involved not only the design/analysis aspects of mechanical engineering I loved, but also, an occupation where I truly was able to grasp and apply the concepts. An occupation where I would be able to express my passion for it without having to fake it. And I think I was able to find it with web development. 
+    So during the course of the pandemic I took a risk and decided to search for an career that involved not only the design/analysis aspects of mechanical engineering I loved, but also, a career that I can imagine myself enjoying ten years down the line. 
+    
+    And I think I was able to find that with web development. 
     `,
     headerStart:false,
     bgColor:'white',
